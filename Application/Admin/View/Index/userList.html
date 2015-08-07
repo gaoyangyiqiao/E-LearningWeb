@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>查看用户</title>
+	<css file='__PUBLIC__/Css/public.css'/>
+</head>
+<body>
+	<table class="table" border=1>
+		<tr>
+			<th style="text-align:center;">用户id</th>
+			<th style="text-align:center;">用户昵称</th>
+			<th style="text-align:center;">密码</th>
+			<th style="text-align:center;">大学</th>
+		</tr>
+		<foreach name='user' item='v'>
+			<tr>
+				<td align="center">{$v.id}</td>
+				<td align="center">{$v.username}</td>
+				<td align="center">{$v.password}</td>
+				<td align="center">{$v.university}</td>
+			</tr>
+		</foreach>
+	</table>
+</body>
+</html>
