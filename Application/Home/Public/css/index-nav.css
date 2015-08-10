@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "glyphicons halflings";
+    src: url("");
+}
+
+html,body{
+    color: #505050;
+    line-height: 1.75em;
+    background: #ebebeb;
+    font: "glyphicons halflings";
+}
+
+.btn-default{
+    border: 1px solid orange;
+    color: #ffffff;
+    border-radius: 2px;
+    transition:all 0.2s ease-in-out;
+    -web-kit-transition:all 0.2s ease-in-out;
+}
+
+.btn{
+    background: orange;
+}
+
+.main-header{
+    text-align: center;
+    padding: 42px 0;
+    background: #ffffff;
+    position: relative;
+}
+
+.main-header .branding{
+    font-size: 3.5em;
+    color: #303030;
+}
+
+a{
+    color: #e67e22;
+    outline: none;
+}
+
+.main-header .branding img{
+    max-width: 100%;
+}
+
+a:active,a:focus,a img{
+    outline: none;
+}
+
+
+.main-navigation{
+    text-align: center;
+    background: #ffffff;
+    position: relative;
+    border-top: 1px solid lightgray;
+    border-bottom: 3px solid lightgray;
+    margin-bottom: 35px;
+}
+
+.nav-current{
+    border-bottom: 3px solid darkorange;
+    margin-bottom: -2px;
+}
+
+
+.navbar-right{
+    margin-right:10px;
+    display: block;
+}
+
+.collapse{
+    margin-left: 10px;
+    display: block;
+    align-self: center;
+}

@@ -3,48 +3,68 @@
 <head>
 	<title>Home</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<link href="/E-LearningWeb/Application/Home/Public/css/bootstrap.css" rel='stylesheet' type='text/css' />
-	<link href="/E-LearningWeb/Application/Home/Public/css/style.css" rel='stylesheet' type='text/css' />
-	<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!--<link href="/E-LearningWeb/Application/Home/Public/css/bootstrap.css" rel='stylesheet' type='text/css' />-->
+	<!--<link href="/E-LearningWeb/Application/Home/Public/css/style.css" rel='stylesheet' type='text/css' />-->
+	<!--<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
 	<link href='http://fonts.useso.com/css?family=Lato:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
 	<!-- 可选的Bootstrap主题文件（一般不用引入） -->
-	<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-	<!--Animation>-->
-	<script src="/E-LearningWeb/Application/Home/Public/js/wow.min.js"></script>
-	<link href="/E-LearningWeb/Application/Home/Public/css/animate.min.css" rel='stylesheet' type='text/css' />
-	<script>
-	new WOW().init();
-	</script>
+	<!--<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">-->
+	<!--&lt;!&ndash;Animation>&ndash;&gt;-->
+	<!--<script src="/E-LearningWeb/Application/Home/Public/js/wow.min.js"></script>-->
+	<!--<link href="/E-LearningWeb/Application/Home/Public/css/animate.min.css" rel='stylesheet' type='text/css' />-->
+    <link href="../../Public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../Public/css/index.css" rel="stylesheet">
+
+
 
 </head>
 <body>
-	<div class="header-home">
-		<div class="fixed-header">
-			<div class="logo wow fadeInDown" data-wow-delay="0.2s">
-				<a href="index.html">
-					<span class="secondary">大学生的知乎</span>
-					<span class="main">E-Learning</span>
-				</a>
-			</div>
-			<div class="top-nav wow bounce" data-wow-delay="0.2s">
-				<span class="menu"> </span>
-				<ul>
-					<li class="active"><a href="index.html">首页</a></li>
-					<li><a href="about.html">我的课程</a></li>
-					<li><a href="services.html">我的大学</a></li>
-					<li><a href="blog.html">讨论区</a></li>
-					<li><a href="contact.html">联系我们</a></li>		
-				</ul>
-				<!-- script-nav -->
+    <nav class="nav navbar navbar-default navbar-fixed-top" id="navbar" role="navigation">
+        <div class="cotainer">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navtabs">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">E-Learning</a>
+            </div>
 
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
+
+            <div id="navtabs" class="collapse navbar-collapse" >
+                <ul class="nav navbar-nav">
+                    <li class="active nav-current" role="presentation"><a href="#">Home</a></li>
+                    <li><a href="#">My Courses</a></li>
+                    <li><a href="#">Topics</a></li>
+                    <li><a href="#">Files</a></li>
+                    <li><a href="#">ContactUs</a> </li>
+                </ul>
+
+                <ul id="settings" class="nav navbar-nav navbar-right">
+                    <li class="right">
+                        <form class="navbar-form" role="search">
+                            <div class="form-group">
+                                <input class="form-control"  type="text" placeholder="Search">
+                            </div>
+
+                            <a href="#" class="btn btn-success">提问</a>
+                        </form>
+                    </li>
+                    <li><a href="#">设置</a></li>
+                    <li><a href="#">登陆</a></li>
+                    <li><a href="#">注册</a></li>
+                    <li><img class="small" src="img/icon.png" style="width:40px;height:40px"></li>
+
+                </ul>
+            </div>
+        </div>
+
+    </nav>
 	<!--header-->
 
 	<!-- content -->
-	<div class="row wow fadeInDown" data-wow-delay="1s">
+	<div class="container main-content" >
 		<div class="col-md-12">
 			<div class="row">
 				<div class="col-md-3">
@@ -60,7 +80,7 @@
 						<h3>
 							院系专题
 						</h3>
-						<ul class="unstyled">
+						<ul class="list-unstyled">
 							<li>
 								<h3>
 									新闻资讯
@@ -241,53 +261,7 @@
 		</div>
 	</div>
 </div>
-<div class="footer wow fadeInUp" data-wow-delay="0.4s">
-	<div class="container">
-		<div class="footer_top">
-			<div class="col-sm-3">
-				<ul class="list1">
-					<h3>浏览</h3>
-					<li><a href="#">我的大学</a></li>
-					<li><a href="#">我的课程</a></li>
-					<li><a href="#">讨论区</a></li>
-					<li><a href="#">联系我们</a></li>
-				</ul>
-			</div>
-			<div class="col-sm-3">
-				<ul class="list1">
-					<h3>下个功能等你来猜</h3>
-					<li><a href="#">博客</a></li>
-					<li><a href="#">管理</a></li>
-					<li><a href="#">历史</a></li>
-					<li><a href="#">文学</a></li>
-				</ul>
-			</div>
-			<div class="col-sm-3">
-				<ul class="list1">
-					<h3>关于学习</h3>
-					<li><a href="#">关于我们</a></li>
-					<li><a href="#">应用</a></li>
-					<li><a href="#">学习环境</a></li>
-					<li><a href="#">注册</a></li>
-				</ul>
-			</div>
-			<div class="col-sm-3">
-				<ul class="socials">
-					<li><a href="#"><i class="fa fb fa-facebook"></i></a></li>
-					<li><a href="#"><i class="fa tw fa-twitter"></i></a></li>
-				</ul>
-				<ul class="list2">
-					<li><strong class="phone">+8618668775879</strong><br><small>周一到周五 / 9.00AM - 06.00PM</small></li>
-					<li>Questions? <a href="malito:mail@demolink.org">hcw13@software.nju.edu.cn</a></li>
-				</ul>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-</div>
-<div class="copy">
-	<p>Copyright &copy; 2015.E-Learning团队。</p>
-</div>
+
 <div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
 <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
 <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
