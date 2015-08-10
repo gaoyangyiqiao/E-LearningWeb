@@ -27,7 +27,8 @@ body a{
 	-o-background-size: cover;
 	background-size: cover;
 	background-position: center;
-	min-height:750px;
+	min-height:300px;
+	max-height: 500px;
 }
 .header_top{
 	padding-top:15em;
@@ -90,7 +91,7 @@ span.main {
 }
 .top-nav ul li a{
 	color: #fff;
-	font: 300 16px/25px Lato, sans-serif;
+	font: 300 16px/25px "Lato", sans-serif;
 	text-transform: uppercase;
 	text-decoration: none;
 	transition: 0.5s all;
@@ -103,10 +104,12 @@ span.main {
 .top-nav ul li.active a, .top-nav ul li a:hover{
 	color:#000;
 	background:#ffde00;
-	-webkit-transform: rotateY(70deg);
+/*	-webkit-transform: rotateY(70deg);
 	-moz-transform: rotateY(70deg);
 	-ms-transform: rotateY(70deg);
-	transform: rotateY(70deg);
+	-o-transform: rotateY(70deg);
+	-khtml-transform: rotateY(70deg);
+	transform: rotateY(70deg);*/
 }
 .border-side{
 	position: absolute;
