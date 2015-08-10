@@ -1,2 +1,11 @@
 .idea
+<<<<<<< HEAD
 .idea/
+=======
+.idea/
+./Application/Runtime/
+Application/Runtime/
+Appliaction/Runtime/Cache
+>>>>>>> origin/master
+Application/Home/Public/css/signin.css
+Application/Home/Public/css/signin.css
