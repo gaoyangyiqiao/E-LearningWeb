@@ -16,8 +16,10 @@
     <link href="__PUBLIC__/css/bootstrap.min.css" rel="stylesheet">
     <link href="../../Public/css/signin.css" rel="stylesheet">
     <link href="__PUBLIC__/css/signin.css" rel="stylesheet">
+    <link href="__PUBLIC__/css/index-nav.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="signin.css" rel="stylesheet">
+    <link href="../../Public/css/signin.css" rel="stylesheet">
+    <link href="../../Public/css/index-nav.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><!--<script src="../../assets/js/ie8-responsive-file-warning.js"></script>--><![endif]-->
@@ -32,6 +34,49 @@
 
 <body>
 
+<nav class="nav navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="cotainer">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navtabs">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">E-Learning</a>
+        </div>
+
+
+        <div id="navtabs" class="collapse navbar-collapse" >
+            <ul class="nav navbar-nav">
+                <li class="active nav-current" role="presentation"><a href="#">Home</a></li>
+                <li><a href="#">My Courses</a></li>
+                <li><a href="#">Topics</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">ContactUs</a> </li>
+            </ul>
+
+            <ul id="settings" class="nav navbar-nav navbar-right">
+                <li class="right">
+                    <form class="navbar-form" role="search">
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Search">
+                        </div>
+
+                        <button type="submit" class="btn btn-default">搜索</button>
+                    </form>
+                </li>
+                <li><a href="#">设置</a></li>
+                <li><a href="#">登陆</a></li>
+                <li><a href="#">注册</a></li>
+                <li><img class="small" src="__PUBLIC__/img/icon.png" style="width:40px;height:40px"></li>
+
+            </ul>
+        </div>
+    </div>
+
+</nav>
+
 <div class="container">
 
     <form class="form-signin">
@@ -45,7 +90,7 @@
                 <input type="checkbox" value="remember-me"> Remember me
             </label>
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        <button class="btn btn-lg btn-default btn-block" type="submit">Sign in</button>
     </form>
 
 </div> <!-- /container -->
