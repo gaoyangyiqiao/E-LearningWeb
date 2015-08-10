@@ -5,7 +5,7 @@ class IndexController extends Controller {
     public function index(){
 
 
-
+        $this->title="E-Learning";
         $this->display('Index/index');
 
     }
