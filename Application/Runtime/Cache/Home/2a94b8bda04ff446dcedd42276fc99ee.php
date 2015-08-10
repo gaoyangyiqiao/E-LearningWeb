@@ -3,22 +3,22 @@
 <head>
 <title>Home</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link href="/elearning/Application/Home/Public/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="/E-LearningWeb/Application/Home/Public/css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="/elearning/Application/Home/Public/js/jquery-1.11.1.min.js"></script>
+<script src="/E-LearningWeb/Application/Home/Public/js/jquery-1.11.1.min.js"></script>
 <!-- Custom Theme files -->
-<link href="/elearning/Application/Home/Public/css/style.css" rel='stylesheet' type='text/css' />
+<link href="/E-LearningWeb/Application/Home/Public/css/style.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--webfont-->
 <link href='http://fonts.useso.com/css?family=Lato:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
 <!----font-Awesome----->
-<link rel="stylesheet" href="/elearning/Application/Home/Public/fonts/css/font-awesome.min.css">
+<link rel="stylesheet" href="/E-LearningWeb/Application/Home/Public/fonts/css/font-awesome.min.css">
 <!----font-Awesome----->
 <!--Animation-->
-<script src="/elearning/Application/Home/Public/js/wow.min.js"></script>
-<link href="/elearning/Application/Home/Public/css/animate.css" rel='stylesheet' type='text/css' />
+<script src="/E-LearningWeb/Application/Home/Public/js/wow.min.js"></script>
+<link href="/E-LearningWeb/Application/Home/Public/css/animate.css" rel='stylesheet' type='text/css' />
 <script>
 	new WOW().init();
 </script>
@@ -143,27 +143,27 @@
 		<div class="container"> 
 			<h3 class="head_1 wow rotateInUpLeft" data-wow-delay="0.4s">大学分区</h3>
 		  <div class="col-md-4 box_6 wow rotateInDownLeft " data-wow-delay="0.4s">
-		  	<img src="/elearning/Application/Home/Public/images/pic1.jpg" class="img-responsive" alt=""/>
+		  	<img src="/E-LearningWeb/Application/Home/Public/images/pic1.jpg" class="img-responsive" alt=""/>
 		  	<div class="desc">
 		  		<h4>清华大学</h4>
 		  		<p>清华大学（Tsinghua University），简称清华，诞生于1911年，因北京西北郊清华园得名，依托美国退还的部分“庚子赔款”建立，初称清华学堂，是清政府设立的留美预备学校，后更名为清华学校。</p>
-		  		<div class="more"><a href="#"><img src="/elearning/Application/Home/Public/images/more.png" alt=""></a></div>
+		  		<div class="more"><a href="#"><img src="/E-LearningWeb/Application/Home/Public/images/more.png" alt=""></a></div>
 		  	</div>
 		  </div>
 		   <div class="col-md-4 box_6 wow lightSpeedIn" data-wow-delay="0.4s">
-		  	<img src="/elearning/Application/Home/Public/images/pic2.jpg" class="img-responsive" alt=""/>
+		  	<img src="/E-LearningWeb/Application/Home/Public/images/pic2.jpg" class="img-responsive" alt=""/>
 		  	<div class="desc">
 		  		<h4>北京大学</h4>
 		  		<p>北京大学（Peking University），简称北大，创建于1898年，初名京师大学堂，是中国近代第一所国立大学，也是中国近代最早以“大学”身份和名称建立的学校。</p>
-		  		<div class="more"><a href="#"><img src="/elearning/Application/Home/Public/images/more.png" alt=""></a></div>
+		  		<div class="more"><a href="#"><img src="/E-LearningWeb/Application/Home/Public/images/more.png" alt=""></a></div>
 		  	</div>
 		  </div>
 		  <div class="col-md-4 box_6 wow rotateIn " data-wow-delay="0.4s">
-		  	<img src="/elearning/Application/Home/Public/images/pic3.jpg" class="img-responsive" alt=""/>
+		  	<img src="/E-LearningWeb/Application/Home/Public/images/pic3.jpg" class="img-responsive" alt=""/>
 		  	<div class="desc">
 		  		<h4>南京大学</h4>
 		  		<p>南京大学，简称南大，是一所源远流长的高等学府。近代校史肇始于1902年筹办的三江师范学堂，1949年“国立中央大学”易名“国立南京大学”，翌年径称“南京大学”，沿用至今。</p>
-		  		<div class="more"><a href="#"><img src="/elearning/Application/Home/Public/images/more.png" alt=""></a></div>
+		  		<div class="more"><a href="#"><img src="/E-LearningWeb/Application/Home/Public/images/more.png" alt=""></a></div>
 		  	</div>
 		  </div>
 	   </div>
@@ -172,9 +172,9 @@
 		<div class="container">
 			<h3 class="head_2 wow rollIn" data-wow-delay="0.4s">欢迎来到E-Learning大家族</h3>
 			<div class="img-wrapper wow slideInLeft" data-wow-delay="0.4s">
-              <a href="#"><img src="/elearning/Application/Home/Public/images/pic6.jpg" class="img-responsive" alt=""/></a>
-              <a href="#"><img src="/elearning/Application/Home/Public/images/pic7.jpg" class="img-responsive" alt=""/></a>
-              <a href="#"><img src="/elearning/Application/Home/Public/images/pic4.jpg" class="img-responsive" alt=""/></a>
+              <a href="#"><img src="/E-LearningWeb/Application/Home/Public/images/pic6.jpg" class="img-responsive" alt=""/></a>
+              <a href="#"><img src="/E-LearningWeb/Application/Home/Public/images/pic7.jpg" class="img-responsive" alt=""/></a>
+              <a href="#"><img src="/E-LearningWeb/Application/Home/Public/images/pic4.jpg" class="img-responsive" alt=""/></a>
             </div>
             <blockquote class="blockquote1">
               <div class="block_info wow slideInRight" data-wow-delay="0.4s">
@@ -189,7 +189,7 @@
 		<div class="container">
 			<h3>快乐学习</h3>
 			<div class="custom_testimonials_wrap_inner">
-				<address><img src="/elearning/Application/Home/Public/images/pic5.jpg" class="img-responsive" alt=""/></address>
+				<address><img src="/E-LearningWeb/Application/Home/Public/images/pic5.jpg" class="img-responsive" alt=""/></address>
 				<div class="extra-wrap">
 				<i class="fa quote fa-quote-left"></i>
 				<p>在这里，你能找到本专业的大神，能找到志同道合的朋友，一切你想要的都在这里!（真的不是吹牛）</p>
