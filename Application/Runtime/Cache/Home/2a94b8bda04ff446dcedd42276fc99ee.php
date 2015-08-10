@@ -67,6 +67,10 @@
 	<!--header-->
 
 	<!-- content -->
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/master
 <div class="container main-content" style="padding-top: 40px">
     <div class="row">
         <div class="col-lg-3 siderbar container">
@@ -100,7 +104,11 @@
                 <ul class="topic-list list-unstyled list-group">
             <li>
                 <div class="topic-head">
+<<<<<<< HEAD
                     <h2 align="left">这是一个问题</h2>
+=======
+                    <h2 align="left"><?php echo ($title); ?></h2>
+>>>>>>> origin/master
                     <div class="topic-meta">
                         <span class="author"><a href="#">gaoyang</a></span>
                         &nbsp;&nbsp;&nbsp;
@@ -381,6 +389,254 @@
         </div>
     </div>
 
+<<<<<<< HEAD
+=======
+=======
+	<div class="row wow fadeInDown" data-wow-delay="1s">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="row">
+						<div class="col-md-12">
+						</div>
+					</div>
+					<div class="row" style="margin-top:50px;">
+						<div class="col-md-12">
+						</div>
+					</div>
+					<div style="margin-left:70px;">
+						<h3>
+							院系专题
+						</h3>
+						<ul class="unstyled">
+							<li>
+								<h3>
+									新闻资讯
+								</h3>
+							</li>
+							<li>
+								<h3>
+									体育竞技
+								</h3>
+							</li>
+							<li>
+								<h3>
+									娱乐八卦
+								</h3>
+							</li>
+							<li>
+								<h3>
+									前沿科技
+								</h3>
+							</li>
+							<li>
+								<h3>
+									环球财经
+								</h3>
+							</li>
+							<li>
+								<h3>
+									天气预报
+								</h3>
+							</li>
+							<li>
+								<h3>
+									房产家居
+								</h3>
+							</li>
+							<li>
+								<h3>
+									网络游戏
+								</h3>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6" style="margin-top:20px;">
+					<div class="tabbable" id="tabs-363493">
+						<ul class="nav nav-tabs">
+							<li class="active">
+								<a data-toggle="tab" href="#panel-656096">最新</a>
+							</li>
+							<li>
+								<a data-toggle="tab" href="#panel-261220">热门</a>
+							</li>
+						</ul>
+						<div class="tab-content wow fadein" data-wow-delay="1s">
+							<div class="tab-pane active" id="panel-656096">
+								<!-- 第一部分内容 -->
+								<h2>
+									标题1
+								</h2>
+								<p>
+									本可视化布局程序在HTML5浏览器上运行更加完美, 能实现自动本地化保存, 即使关闭了网页, 下一次打开仍然能恢复上一次的操作.
+								</p>
+								<p>
+									<a class="btn" href="<?php echo U('Index/concrete');?>">查看全部 »</a>
+									<a class="btn" href="#">评论 »</a>
+								</p>
+								<h2>
+									标题2
+								</h2>
+								<p>
+									本可视化布局程序在HTML5浏览器上运行更加完美, 能实现自动本地化保存, 即使关闭了网页, 下一次打开仍然能恢复上一次的操作.
+								</p>
+								<p>
+									<a class="btn" href="#">查看更多 »</a>
+								</p>
+								<h2>
+									标题3
+								</h2>
+								<p>
+									本可视化布局程序在HTML5浏览器上运行更加完美, 能实现自动本地化保存, 即使关闭了网页, 下一次打开仍然能恢复上一次的操作.
+								</p>
+								<p>
+									<a class="btn" href="#">查看更多 »</a>
+								</p>
+							</div>
+							<div class="tab-pane" id="panel-261220">
+								<!-- 第二部分内容. -->
+								<h2>
+									标题4
+								</h2>
+								<p>
+									本可视化布局程序在HTML5浏览器上运行更加完美, 能实现自动本地化保存, 即使关闭了网页, 下一次打开仍然能恢复上一次的操作.
+								</p>
+								<p>
+									<a class="btn" href="#">查看更多 »</a>
+								</p>
+								<h2>
+									标题5
+								</h2>
+								<p>
+									本可视化布局程序在HTML5浏览器上运行更加完美, 能实现自动本地化保存, 即使关闭了网页, 下一次打开仍然能恢复上一次的操作.
+								</p>
+								<p>
+									<a class="btn" href="#">查看更多 »</a>
+								</p>
+								<h2>
+									标题6
+								</h2>
+								<p>
+									本可视化布局程序在HTML5浏览器上运行更加完美, 能实现自动本地化保存, 即使关闭了网页, 下一次打开仍然能恢复上一次的操作.
+								</p>
+								<p>
+									<a class="btn" href="#">查看更多 »</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-md-3">
+					<div class="row">
+						<div class="col-md-12">
+						</div>
+					</div>
+					<div class="row" style="margin-top:50px;">
+						<div class="col-md-12">
+						</div>
+					</div>
+					<div style="margin-left:70px;">
+						<h3>
+							热门话题
+						</h3>
+						<ul class="unstyled">
+							<li>
+								<h3>
+									新闻资讯
+								</h3>
+							</li>
+							<li>
+								<h3>
+									体育竞技
+								</h3>
+							</li>
+							<li>
+								<h3>
+									娱乐八卦
+								</h3>
+							</li>
+							<li>
+								<h3>
+									前沿科技
+								</h3>
+							</li>
+							<li>
+								<h3>
+									环球财经
+								</h3>
+							</li>
+							<li>
+								<h3>
+									天气预报
+								</h3>
+							</li>
+							<li>
+								<h3>
+									房产家居
+								</h3>
+							</li>
+							<li>
+								<h3>
+									网络游戏
+								</h3>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer wow fadeInUp" data-wow-delay="0.4s">
+	<div class="container">
+		<div class="footer_top">
+			<div class="col-sm-3">
+				<ul class="list1">
+					<h3>浏览</h3>
+					<li><a href="#">我的大学</a></li>
+					<li><a href="#">我的课程</a></li>
+					<li><a href="#">讨论区</a></li>
+					<li><a href="#">联系我们</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-3">
+				<ul class="list1">
+					<h3>下个功能等你来猜</h3>
+					<li><a href="#">博客</a></li>
+					<li><a href="#">管理</a></li>
+					<li><a href="#">历史</a></li>
+					<li><a href="#">文学</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-3">
+				<ul class="list1">
+					<h3>关于学习</h3>
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">应用</a></li>
+					<li><a href="#">学习环境</a></li>
+					<li><a href="#">注册</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-3">
+				<ul class="socials">
+					<li><a href="#"><i class="fa fb fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa tw fa-twitter"></i></a></li>
+				</ul>
+				<ul class="list2">
+					<li><strong class="phone">+8618668775879</strong><br><small>周一到周五 / 9.00AM - 06.00PM</small></li>
+					<li>Questions? <a href="malito:mail@demolink.org">hcw13@software.nju.edu.cn</a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<div class="copy">
+	<p>Copyright &copy; 2015.E-Learning团队。</p>
+>>>>>>> b53c521f0f238ca2b6aea92f75bba12a91142243
+>>>>>>> origin/master
 </div>
 
 <footer class="main-footer">
