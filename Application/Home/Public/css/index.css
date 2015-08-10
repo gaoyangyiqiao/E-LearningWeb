@@ -1,3 +1,172 @@
 /**
  * Created by gaoyang on 15/8/8.
  */
+
+
+
+
+.main-content{
+    margin-top: 30px;
+}
+
+.topic-list{
+    background: #ffffff;
+    list-style: none;
+    text-align: left;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+}
+
+.topic-list .topic-head{
+    text-align: left;
+    border-top: 1px solid lightgray;
+    padding-left: 5%;
+}
+
+.topic-list .topic-content{
+    text-align: left;
+    padding-left: 5%;
+}
+
+.topic-readmore-btn{
+    text-align: right;
+    padding-right: 5%;
+}
+
+
+.sidebar-department-list{
+    list-style:none;
+    border: 1px solid lightgray;
+    background: #ffffff;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.department-list li{
+    border-bottom: 1px solid lightgray;
+    text-align: center;
+}
+
+
+.topic-tips{
+    text-align: right;
+    padding-right: 5%;
+    padding-bottom: 1%;
+}
+
+.load-more{
+    width: 100%;
+    text-align: left;
+    background: #ffffff;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.sidebar .sidebar-hot-topics{
+    display: block;
+    background: #ffffff;
+    border-radius: 2px;
+    border:1px solid lightgray;
+
+}
+
+.sidebar .sidebar-hot-files{
+    display: block;
+    background: #ffffff;
+    border-radius: 2px;
+    border:1px solid lightgray;
+    margin-top: 20px;
+}
+
+.list-title{
+    text-align: center;
+}
+
+.hot-topic-list li{
+    margin-left: 5%;
+    color: darkgray;
+}
+
+.hot-file-list li{
+    text-align: center;
+    color: darkgray;
+}
+
+.list-more{
+    padding: 5%;
+    text-align: right;
+}
+
+.btn-default:hover{
+    color: #ffffff;
+    background: darkgray;
+    border: 1px solid darkgray;
+}
+
+
+.sidebar .list-more .btn{
+    width: 100%;
+    text-align: center;
+}
+
+
+.main-footer{
+    background: #000000;
+    margin-bottom: -1px;
+    margin-top:40px
+}
+
+.main-footer .widght{
+    padding: 30px;
+}
+
+
+.main-footer .btn-default{
+    background: none;
+    border: 1px solid darkgray;
+    margin-top: 5px;
+}
+
+.main-footer .btn-default:hover{
+    background: darkgrey;
+    border: 1px solid darkgray;
+}
+
+.main-footer .widght-content .hot-topic li{
+    border-bottom: 1px dashed #c0c0c0;
+    background: none;
+}
+
+.main-footer .widght-content .topic-list ul{
+    background: none;
+}
+
+.main-footer .widght-content .topic-list ul li {
+    color: #ffffff;
+}
+
+.footer-list li{
+    border-bottom: 1px dashed lightgray;
+}
+
+.about-us a{
+    padding: 20px;
+    margin-top: 10%;
+}
+
+.widght .title{
+    color: #ffffff;
+    padding: 20px;
+    border-bottom: 1px solid lightgrey;
+    width: 100%;
+    left: 0;
+}
+
+/*.widght .title:after{*/
+/*content:"";*/
+/*width: 200px;*/
+/*position: absolute;*/
+/*left: 0;*/
+/*bottom: -1px;*/
+/*}*/
