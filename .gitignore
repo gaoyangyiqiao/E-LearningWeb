@@ -5,7 +5,12 @@
 .idea/
 ./Application/Runtime/
 Application/Runtime/
+<<<<<<< HEAD
 Appliaction/Runtime/Cache
 >>>>>>> origin/master
 Application/Home/Public/css/signin.css
 Application/Home/Public/css/signin.css
+=======
+Application/Runtime
+Appliaction/Runtime/Cache
+>>>>>>> origin/master
