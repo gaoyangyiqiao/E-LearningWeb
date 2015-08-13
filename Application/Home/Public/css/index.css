@@ -2,18 +2,6 @@
  * Created by gaoyang on 15/8/8.
  */
 
-
-.nav-tabs{
-    background: #ffffff;
-    width: 100%;
-    text-align: right;
-    border-top: 1px solid #d3d3d3;
-    border-left: 1px solid #d3d3d3;
-    border-right: 1px solid #d3d3d3;
-
-}
-
-
 body{
     background: #ffffff;
 }
@@ -27,10 +15,7 @@ body{
     background: #ffffff;
     list-style: none;
     text-align: left;
-    border-bottom: 1px solid lightgray;
-    border-left: 1px solid lightgray;
-    border-right: 1px solid lightgray;
-
+    border: 1px solid lightgray;
     border-radius: 2px;
 }
 
@@ -39,7 +24,6 @@ body{
     border-top: 1px solid lightgray;
     padding-left: 5%;
 }
-
 
 .topic-list .topic-content{
     text-align: left;
