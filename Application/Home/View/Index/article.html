@@ -5,12 +5,13 @@
 
     <link href="__PUBLIC__/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="__PUBLIC__/css/icon.css" rel="stylesheet" type="text/css">
-    <link href="__PUBLIC__/css/common.css?v=20140930" rel="stylesheet" type="text/css">
+    <link href="__PUBLIC__/css/common.css" rel="stylesheet" type="text/css">
     <link href="__PUBLIC__/css/index-nav.css" rel="stylesheet">
-    <link href="__PUBLIC__/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.quilljs.com/0.20.0/quill.snow.css" />
     <style type="text/css">.fancybox-margin {
         margin-right: 0px;
     }</style>
+
 </head>
 <body>
 <nav class="nav navbar navbar-default navbar-fixed-top" role="navigation">
@@ -26,13 +27,13 @@
         </div>
 
 
-        <div id="navtabs" class="collapse navbar-collapse" >
+        <div id="navtabs" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class="active nav-current" role="presentation"><a href="{:U('Index/index')}">Home</a></li>
                 <li><a href="#">My Courses</a></li>
                 <li><a href="#">Topics</a></li>
                 <li><a href="#">Files</a></li>
-                <li><a href="#">ContactUs</a> </li>
+                <li><a href="#">ContactUs</a></li>
             </ul>
 
             <ul id="settings" class="nav navbar-nav navbar-right">
@@ -42,7 +43,7 @@
                             <input class="form-control" type="text" placeholder="Search">
                         </div>
 
-                        <button type="submit" class="btn btn-default">搜索</button>
+                        <button type="submit" class="btn btn-default btn-nav">搜索</button>
                     </form>
                 </li>
                 <li><a href="#">设置</a></li>
@@ -57,8 +58,9 @@
 </nav>
 <!--header-->
 
-</br>
-</br>
+<br/>
+<br/>
+
 <div class="aw-container-wrap">
     <div class="container">
         <div class="row">
@@ -95,7 +97,7 @@
                             <div class="meta">
                                 <span class="text-color-999">2015-07-05</span>
 
-                                <a class="aw-add-comment text-color-999 " data-id="205" data-type="question"
+                                <a class="comment" id="205" data-id="205" data-type="question"
                                    data-first-click="hide" data-comment-count="0"><i class="icon icon-comment"></i>添加评论</a>
 
                                 <div class="pull-right more-operate">
@@ -117,6 +119,28 @@
                                     </div>
 
                                 </div>
+                            </div>
+                            <div class="comment-box" id="comment-1" style="display: none;">
+                                <div class="aw-comment-list">
+                                    <div align="center" class="aw-padding10">暂无评论</div>
+                                </div>
+                                <form onsubmit="return false"
+                                      action="http://wenda.ghostchina.com/question/ajax/save_question_comment/question_id-205"
+                                      method="post">
+                                    <div class="aw-comment-box-main"><textarea name="message"
+                                                                               class="aw-comment-txt form-control"
+                                                                               style="height: 34px; overflow: hidden; overflow-y: hidden; word-wrap: break-word;"
+                                                                               placeholder="评论一下..."
+                                                                               rows="2"></textarea>
+
+                                        <div class="aw-comment-box-btn" style="display: block; margin-top: 5px;"><span
+                                                class="pull-right"><a
+                                                class="btn btn-mini btn-success"
+                                                onclick="AWS.User.save_comment($(this));" href="javascript:;">评论</a><a
+                                                class="btn btn-mini btn-gray close-comment-box" id="cancel"
+                                                href="javascript:;">取消</a></span></div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -141,11 +165,6 @@
                                             <a class="aw-user-name" href="http://wenda.ghostchina.com/people/error"
                                                data-id="386">gaoyang</a>
                                             - <span class="text-color-999">--elearning.com</span></p>
-
-                                        <p class="text-color-999 aw-agree-by hide">
-                                            赞同来自:？？？？？？？？？？？？？？？？？
-
-                                        </p>
                                     </div>
                                 </div>
                                 <div class="mod-body clearfix">
@@ -208,6 +227,78 @@
 
                                     </div>
                                     <!-- end 社交操作 -->
+                                    <div class="aw-comment-box" id="aw-comment-box-answer-352" style="display: none;">
+                                        <div class="aw-comment-list">
+                                            <ul>
+                                                <!-- 两条（n）评论-->
+                                                <li>
+                                                    <a class="aw-user-name"
+                                                       href="http://wenda.ghostchina.com/people/skyue"
+                                                       data-id="166"><img alt=""
+                                                                          src="http://wenda.ghostchina.com/uploads/avatar/000/00/01/66_avatar_min.jpg"></a>
+
+                                                    <div>
+                                                        <p class="clearfix">
+		<span class="pull-right">
+			<a onclick="$(this).parents('.aw-comment-box').find('form textarea').insertAtCaret('@零:');$(this).parents('.aw-comment-box').find('form').show().find('textarea').focus();$.scrollTo($(this).parents('.aw-comment-box').find('form'), 300, {queue:true});"
+               href="javascript:;">回复</a>
+		</span>
+                                                            <a class="aw-user-name author"
+                                                               href="http://wenda.ghostchina.com/people/skyue"
+                                                               data-id="166">零</a>
+                                                            • <span>2015-08-04 11:51</span>
+                                                        </p>
+
+                                                        <p class="clearfix">
+                                                            其实标签按文章数排序也算业内的一个标准方式了，主要还是ghost不支持分类，就把标签当分类来用了，按数量排用的就不爽。貌似这个是中文版自己加的助手函数。<br>
+                                                            ghost官方已经两个多月没发版了，肯定在憋大招，下个版本应该能提供大部分基础api，到时就等你们这些高手贡献各种插件了，哈哈。。
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a class="aw-user-name"
+                                                       href="http://wenda.ghostchina.com/people/ITronger" data-id="436"><img
+                                                            alt=""
+                                                            src="http://wenda.ghostchina.com/static/common/avatar-min-img.png"></a>
+
+                                                    <div>
+                                                        <p class="clearfix">
+		<span class="pull-right">
+			<a onclick="$(this).parents('.aw-comment-box').find('form textarea').insertAtCaret('@ITronger:');$(this).parents('.aw-comment-box').find('form').show().find('textarea').focus();$.scrollTo($(this).parents('.aw-comment-box').find('form'), 300, {queue:true});"
+               href="javascript:;">回复</a>
+		</span>
+                                                            <a class="aw-user-name author"
+                                                               href="http://wenda.ghostchina.com/people/ITronger"
+                                                               data-id="436">ITronger</a>
+                                                            • <span>19 小时前</span>
+                                                        </p>
+
+                                                        <p class="clearfix">bfbsdb<a class="aw-user-name"
+                                                                                     href="http://wenda.ghostchina.com/people/skyue"
+                                                                                     data-id="166">@零</a>:</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- 提交表单-->
+                                        <form onsubmit="return false"
+                                              action="http://wenda.ghostchina.com/question/ajax/save_answer_comment/answer_id-352"
+                                              method="post">
+                                            <div class="aw-comment-box-main"><textarea name="message"
+                                                                                       class="aw-comment-txt form-control"
+                                                                                       style="height: 34px; overflow: hidden; overflow-y: hidden; word-wrap: break-word;"
+                                                                                       placeholder="评论一下..."
+                                                                                       rows="2"></textarea>
+
+                                                <div class="aw-comment-box-btn" style="display: block;"><span
+                                                        class="pull-right"><a class="btn btn-mini btn-success"
+                                                                              onclick="AWS.User.save_comment($(this));"
+                                                                              href="javascript:;">评论</a><a
+                                                        class="btn btn-mini btn-gray close-comment-box"
+                                                        href="javascript:;">取消</a></span></div>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                             <div class="aw-item" id="answer_list_353" force_fold="0" uninterested_count="0">
@@ -223,11 +314,6 @@
                                             <a class="aw-user-name" href="http://wenda.ghostchina.com/people/wangsai"
                                                data-id="2">王赛</a>
                                             <i title="个人认证" class="icon-v"></i>
-                                        </p>
-
-                                        <p class="text-color-999 aw-agree-by hide">
-                                            赞同来自:
-
                                         </p>
                                     </div>
                                 </div>
@@ -288,6 +374,28 @@
 
                                     </div>
                                     <!-- end 社交操作 -->
+                                    <div class="aw-comment-box" id="aw-comment-box-answer-353" style="display: none;">
+                                        <div class="aw-comment-list">
+                                            <div align="center" class="aw-padding10">暂无评论</div>
+                                        </div>
+                                        <form onsubmit="return false"
+                                              action="http://wenda.ghostchina.com/question/ajax/save_answer_comment/answer_id-353"
+                                              method="post">
+                                            <div class="aw-comment-box-main"><textarea name="message"
+                                                                                       class="aw-comment-txt form-control"
+                                                                                       style="height: 34px; overflow: hidden; overflow-y: hidden; word-wrap: break-word;"
+                                                                                       placeholder="评论一下..."
+                                                                                       rows="2"></textarea>
+
+                                                <div class="aw-comment-box-btn" style="display: block;"><span class="pull-right"><a
+                                                        class="btn btn-mini btn-success"
+                                                        onclick="AWS.User.save_comment($(this));"
+                                                        href="javascript:;">评论</a><a
+                                                        class="btn btn-mini btn-gray close-comment-box"
+                                                        href="javascript:;">取消</a></span></div>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                             <div class="aw-item" id="answer_list_362" force_fold="0" uninterested_count="0">
@@ -303,11 +411,6 @@
                                             <a class="aw-user-name" href="http://wenda.ghostchina.com/people/error"
                                                data-id="386">Aolose</a>
                                             - <span class="text-color-999">i.aolose.cc</span></p>
-
-                                        <p class="text-color-999 aw-agree-by hide">
-                                            赞同来自:
-
-                                        </p>
                                     </div>
                                 </div>
                                 <div class="mod-body clearfix">
@@ -371,23 +474,58 @@
 
                                     </div>
                                     <!-- end 社交操作 -->
+                                    <div class="aw-comment-box" id="aw-comment-box-answer-362" style="display: none;">
+                                        <div class="aw-comment-list">
+                                            <ul>
+                                                <li>
+                                                    <a class="aw-user-name"
+                                                       href="http://wenda.ghostchina.com/people/7627an"
+                                                       data-id="445"><img alt=""
+                                                                          src="http://wenda.ghostchina.com/uploads/avatar/000/00/04/45_avatar_min.jpg"></a>
+
+                                                    <div>
+                                                        <p class="clearfix">
+		<span class="pull-right">
+			<a onclick="$(this).parents('.aw-comment-box').find('form textarea').insertAtCaret('@7627an:');$(this).parents('.aw-comment-box').find('form').show().find('textarea').focus();$.scrollTo($(this).parents('.aw-comment-box').find('form'), 300, {queue:true});"
+               href="javascript:;">回复</a>
+		</span>
+                                                            <a class="aw-user-name author"
+                                                               href="http://wenda.ghostchina.com/people/7627an"
+                                                               data-id="445">7627an</a>
+                                                            • <span>1 小时前</span>
+                                                        </p>
+
+                                                        <p class="clearfix">vxzvcx</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <form onsubmit="return false"
+                                              action="http://wenda.ghostchina.com/question/ajax/save_answer_comment/answer_id-362"
+                                              method="post">
+                                            <div class="aw-comment-box-main"><textarea name="message"
+                                                                                       class="aw-comment-txt form-control"
+                                                                                       style="height: 34px; overflow: hidden; overflow-y: hidden; word-wrap: break-word;"
+                                                                                       placeholder="评论一下..."
+                                                                                       rows="2"></textarea>
+
+                                                <div class="aw-comment-box-btn" style="display: block;"><span class="pull-right"><a
+                                                        class="btn btn-mini btn-success"
+                                                        onclick="AWS.User.save_comment($(this));"
+                                                        href="javascript:;">评论</a><a
+                                                        class="btn btn-mini btn-gray close-comment-box"
+                                                        href="javascript:;">取消</a></span></div>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="mod-footer">
-                            <div class="aw-load-more-content hide" id="load_uninterested_answers">
-                                <span tabindex="-1" class="text-color-999 aw-alert-box text-color-999"
-                                      onclick="AWS.alert('被折叠的回复是被你或者被大多数用户认为没有帮助的回复');"
-                                      href="javascript:;">为什么被折叠?</span>
-                                <a class="aw-load-more-content" href="javascript:;"><span
-                                        class="hide_answers_count">0</span> 个回复被折叠</a>
-                            </div>
-
-                            <div class="hide aw-feed-list" id="uninterested_answers_list"></div>
                         </div>
 
                     </div>
                     <!-- end 问题详细模块 -->
+                    <!-- Create the toolbar container -->
+                    <textarea id="summernote">Hello Summernote</textarea>
 
                     <!-- 回复编辑器 -->
                     <div class="aw-mod aw-replay-box question">
@@ -431,7 +569,8 @@
                         <div class="mod-body font-size-12">
                             <ul>
                                 <li><a href="http://wenda.ghostchina.com/question/9">希望能够共享一下E-Learning的文章</a></li>
-                                <li><a href="http://wenda.ghostchina.com/question/49">写文章出现乱码，然后重启E-Learning博客名称也变成乱码</a>
+                                <li>
+                                    <a href="http://wenda.ghostchina.com/question/49">写文章出现乱码，然后重启E-Learning博客名称也变成乱码</a>
                                 </li>
                                 <li><a href="http://wenda.ghostchina.com/question/127">曹二为什么这么蠢？</a>
                                 </li>
@@ -472,6 +611,7 @@
                         </div>
                     </div>
                     <!-- end 问题状态 -->
+
                 </div>
                 <!-- end 侧边栏 -->
             </div>
@@ -482,21 +622,23 @@
 <div class="aw-footer-wrap">
     <div class="aw-footer">
         Copyright © 2015<span class="hidden-xs"> - E-Learning</span>
-	</div>
+    </div>
 </div>
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
 
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-<a class="aw-back-top hidden-xs" onclick="$.scrollTo(1, 600, {queue:true});" href="javascript:;"><i
-        class="icon icon-up"></i></a>
+<script type="text/javascript" src="__PUBLIC__/js/article.js"></script>
+<!-- include summernote css/js-->
+<link href="__PUBLIC__/css/summernote.css" />
+<script src="__PUBLIC__/js/summernote.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("$summernote").summernote();
+    });
 
-
-<!-- DO NOT REMOVE -->
-<div class="aw-ajax-box" id="aw-ajax-box"></div>
-<div id="__crond" style="display:none;"><img width="1" height="1"
-                                             src="http://wenda.ghostchina.com/crond/run/1439272288"></div>
-
-<!-- Escape time: 0.042324066162109 --><!-- / DO NOT REMOVE -->
-
-
+</script>
 </body>
 </html>
