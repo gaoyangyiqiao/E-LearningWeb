@@ -8,10 +8,7 @@
     <link href="__PUBLIC__/css/icon.css" rel="stylesheet" type="text/css">
     <link href="__PUBLIC__/css/common.css" rel="stylesheet" type="text/css">
     <link href="__PUBLIC__/css/index-nav.css" rel="stylesheet">
-    <link rel="stylesheet" href="//cdn.quilljs.com/0.20.0/quill.snow.css" />
     <link href="//cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
-    <link href="//cdn.bootcss.com/summernote/0.6.16/summernote-bs3.min.css" rel="stylesheet">
-    <link href="//cdn.bootcss.com/summernote/0.6.16/summernote.min.css" rel="stylesheet">
     <style type="text/css">.fancybox-margin {
         margin-right: 0px;
     }</style>
@@ -253,7 +250,7 @@
                                                 <!-- 两条（n）评论-->
                                                 <li>
                                                     <a class="aw-user-name"
-                                                       href="http://wenda.ghostchina.com/people/skyue"
+                                                       href="{:U(User/index)}"
                                                        data-id="166"><img alt=""
                                                                           src="http://wenda.ghostchina.com/uploads/avatar/000/00/01/66_avatar_min.jpg"></a>
 
@@ -544,8 +541,41 @@
 
                     </div>
                     <!-- end 问题详细模块 -->
-                    <!-- Create the toolbar container -->
-                    <div id="summernote">Hello Summernote</div>
+                    <div class="aw-mod aw-replay-box question">
+                        <a name="answer_form"></a>
+                        <form class="question_answer_form" id="answer_form" onsubmit="return false;" action="http://wenda.ghostchina.com/question/ajax/save_answer/" method="post">
+                            <input name="post_hash" type="hidden" value="0F456B19D23DE399">
+                            <input name="question_id" type="hidden" value="205">
+                            <input name="attach_access_key" type="hidden" value="483b66eff972fa9eac0ae3a0670e5bcf">
+                            <div class="mod-head">
+                                <a class="aw-user-name" href="http://wenda.ghostchina.com/people/"><img alt="七秒悲伤" src="http://wenda.ghostchina.com/uploads/avatar/000/00/05/42_avatar_mid.jpg"></a>
+                                <p>
+                                    <label class="pull-right">
+                                        <input name="auto_focus" type="checkbox" checked="checked" value="1"> 关注问题								</label>
+                                    <label class="pull-right">
+                                        <a href="http://wenda.ghostchina.com/page/integral" target="_blank">积分规则</a>
+                                    </label>
+                                    七秒悲伤							</p>
+                            </div>
+                            <div class="mod-body">
+                                <div class="aw-mod aw-editor-box">
+                                    <div class="mod-head">
+                                        <div class="wmd-panel">
+                                            <textarea name="answer_content" class="wmd-input form-control autosize" id="wmd-input" style="height: 200px; overflow: hidden; overflow-y: hidden; word-wrap: break-word;" rows="15"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="mod-body clearfix">
+                                        <a class="btn btn-normal btn-success pull-right btn-reply disabled" onclick="AWS.ajax_post($('#answer_form'), AWS.ajax_processer, 'reply');" href="javascript:;">回复</a>
+                                        <span class="pull-right text-color-999" id="answer_content_message">&nbsp;</span>
+                                    </div>
+                                    <div class="mod-footer">
+                                        <div class="wmd-panel wmd-preview" id="wmd-preview" style="display: none;"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
 
                     <!-- 回复编辑器 -->
                     <div class="aw-mod aw-replay-box question">
@@ -566,7 +596,7 @@
                         <div class="mod-body">
                             <dl>
                                 <dt class="pull-left aw-border-radius-5">
-                                    <a href="http://wenda.ghostchina.com/people/skyue"><img alt="零"
+                                    <a href="{:U('Article/user')}"><img alt="零"
                                                                                             src="http://wenda.ghostchina.com/uploads/avatar/000/00/01/66_avatar_mid.jpg"></a>
                                 </dt>
                                 <dd class="pull-left">
