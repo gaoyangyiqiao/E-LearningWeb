@@ -18,7 +18,7 @@
 
 </head>
 <body>
-<<<<<<< HEAD
+
 	<div class="header-home">
 		<div class="fixed-header">
 			<div class="logo wow fadeInDown" data-wow-delay="0.2s">
@@ -42,7 +42,7 @@
 			<div class="clearfix"> </div>
 		</div>
 	</div>
-=======
+
 
 
 <nav class="nav navbar navbar-default navbar-fixed-top" role="navigation">
@@ -87,11 +87,11 @@
     </div>
 
 </nav>
->>>>>>> origin/master
+
 	<!--header-->
 
 	<!-- content -->
-<<<<<<< HEAD
+
 <div class="container main-content" style="padding-top: 40px">
     <div class="row">
         <div class="col-lg-3 siderbar container">
@@ -103,12 +103,7 @@
 
                 <div class="department-list">
                     <ul class="list-unstyled">
-                        <li><a href="#"><h3>软件学院</h3></a></li>
-                        <li><a href="#"><h3>数学系</h3></a></li>
-                        <li><a href="#"><h3>历史学系</h3></a></li>
-                        <li><a href="#"><h3>哲学系</h3></a></li>
-                        <li><a href="#"><h3>物理学院</h3></a></li>
-                        <li><a href="#"><h3>政府管理学院</h3></a></li>
+                        <?php echo ($department_list); ?>
                     </ul>
                 </div>
 
