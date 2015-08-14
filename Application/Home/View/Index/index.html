@@ -10,6 +10,7 @@
     <link href="__PUBLIC__/css/bootstrap.min.css" rel='stylesheet' type='text/css'/>
     <link href="__PUBLIC__/css/index-nav.css" rel="stylesheet">
     <link href="__PUBLIC__/css/index.css" rel="stylesheet">
+    <link href="__PUBLIC__/css/icon.css" rel="stylesheet" type="text/css">
     <!--<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
     <link href='http://fonts.useso.com/css?family=Lato:100,200,300,400,500,600,700,800,900' rel='stylesheet'
           type='text/css'>
@@ -67,34 +68,7 @@
 <!-- content -->
 <div class="container main-content" style="padding-top: 40px">
     <div class="row">
-        <div class="col-lg-3 siderbar container">
-            <div class="sidebar-department-list">
-
-                <div class="department-list-search">
-
-                </div>
-
-                <div class="department-list">
-                    <ul class="list-unstyled">
-                        <li><a href="#"><h3>软件学院</h3></a></li>
-                        <li><a href="#"><h3>数学系</h3></a></li>
-                        <li><a href="#"><h3>历史学系</h3></a></li>
-                        <li><a href="#"><h3>哲学系</h3></a></li>
-                        <li><a href="#"><h3>物理学院</h3></a></li>
-                        <li><a href="#"><h3>政府管理学院</h3></a></li>
-                    </ul>
-                </div>
-
-
-                <div class="list-more">
-                    <a class="btn btn-default btn-nav" style="width:100%">更多院系</a>
-                </div>
-
-            </div>
-        </div>
-        <div class="nav-tabs">
-
-            <div class="col-lg-6">
+        <div class="col-lg-9">
                 <ul class="topic-list list-unstyled list-group">
                     <li>
                         <div class="topic-head">
@@ -118,20 +92,27 @@
 
                         <div class="topic-readmore-btn">
                             <ul class="list-inline">
-                                <li><a href="#">Comment:
-                                    <small>100</small>
-                                </a></li>
-                                <li><a href="#">Likes:
-                                    <small>50</small>
-                                </a></li>
+                                <li>
+                                    <a href="#">
+                                        <i title="" class="icon icon-agree" data-original-title="赞同回复"
+                                           data-toggle="tooltip" data-placement="right"></i>
+                                        <b class="count">50</b>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="agree">
+                                        <i title="" class="icon icon-comment" data-original-title="赞同回复"
+                                           data-toggle="tooltip" data-placement="right"></i>
+                                        <b class="count">100</b>
+                                    </a>
+                                </li>
                                 <a class="btn btn-default btn-nav" href="{:U('Article/index')}">阅读全文</a>
                             </ul>
                         </div>
                     </li>
-
                     <li>
                         <div class="topic-head">
-                            <h3 align="left">这是一个问题</h3>
+                            <h3 align="left">{$title}</h3>
 
                             <div class="topic-meta">
                                 <span class="author"><a href="#">gaoyang</a></span>
@@ -151,58 +132,27 @@
 
                         <div class="topic-readmore-btn">
                             <ul class="list-inline">
-                                <li><a href="#">Comment:
-                                    <small>100</small>
-                                </a></li>
-                                <li><a href="#">Likes:
-                                    <small>50</small>
-                                </a></li>
-                                <a class="btn btn-default btn-nav">阅读全文</a>
-                            </ul>
-
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="topic-head">
-                            <h2 align="left">这是一个问题</h2>
-
-                            <div class="topic-meta">
-                                <span class="author"><a href="#">gaoyang</a></span>
-                                &nbsp;&nbsp;&nbsp;
-                                <span>软件学院</span>
-                                &nbsp;&nbsp;&nbsp;
-                                <span>大二</span>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <span>2015年8月15日</span>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="topic-content">
-                            <p>为什么曹二这么蠢这么蠢这么蠢这么蠢这么蠢这么蠢这么蠢这么
-                                蠢这么蠢这么蠢这么蠢</p>
-                        </div>
-
-                        <div class="topic-readmore-btn">
-                            <a class="btn btn-default btn-nav">阅读全文</a>
-                        </div>
-
-                        <hr>
-                        <div class="topic-tips">
-                            <ul class="list-inline">
-                                <li><a href="#">Comment:
-                                    <small>100</small>
-                                </a></li>
-                                <li><a href="#">Likes:
-                                    <small>50</small>
-                                </a></li>
+                                <li>
+                                    <a href="#">
+                                        <i title="" class="icon icon-agree" data-original-title="赞同回复"
+                                           data-toggle="tooltip" data-placement="right"></i>
+                                        <b class="count">50</b>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i title="" class="icon icon-comment" data-original-title="赞同回复"
+                                           data-toggle="tooltip" data-placement="right"></i>
+                                        <b class="count">100</b>
+                                    </a>
+                                </li>
+                                <a class="btn btn-default btn-nav" href="{:U('Article/index')}">阅读全文</a>
                             </ul>
                         </div>
                     </li>
-
                     <li>
                         <div class="topic-head">
-                            <h2 align="left">这是一个问题</h2>
+                            <h3 align="left">{$title}</h3>
 
                             <div class="topic-meta">
                                 <span class="author"><a href="#">gaoyang</a></span>
@@ -221,25 +171,28 @@
                         </div>
 
                         <div class="topic-readmore-btn">
-                            <a class="btn btn-default btn-nav">阅读全文</a>
-                        </div>
-
-                        <hr>
-                        <div class="topic-tips">
                             <ul class="list-inline">
-                                <li><a href="#">Comment:
-                                    <small>100</small>
-                                </a></li>
-                                <li><a href="#">Likes:
-                                    <small>50</small>
-                                </a></li>
+                                <li>
+                                    <a href="#">
+                                        <i title="" class="icon icon-agree" data-original-title="赞同回复"
+                                           data-toggle="tooltip" data-placement="right"></i>
+                                        <b class="count">50</b>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i title="" class="icon icon-comment" data-original-title="赞同回复"
+                                           data-toggle="tooltip" data-placement="right"></i>
+                                        <b class="count">100</b>
+                                    </a>
+                                </li>
+                                <a class="btn btn-default btn-nav" href="{:U('Article/index')}">阅读全文</a>
                             </ul>
                         </div>
                     </li>
-
                     <li>
                         <div class="topic-head">
-                            <h2 align="left">这是一个问题</h2>
+                            <h3 align="left">{$title}</h3>
 
                             <div class="topic-meta">
                                 <span class="author"><a href="#">gaoyang</a></span>
@@ -258,25 +211,28 @@
                         </div>
 
                         <div class="topic-readmore-btn">
-                            <a class="btn btn-default btn-nav">阅读全文</a>
-                        </div>
-
-                        <hr>
-                        <div class="topic-tips">
                             <ul class="list-inline">
-                                <li><a href="#">Comment:
-                                    <small>100</small>
-                                </a></li>
-                                <li><a href="#">Likes:
-                                    <small>50</small>
-                                </a></li>
+                                <li>
+                                    <a href="#">
+                                        <i title="" class="icon icon-agree" data-original-title="赞同回复"
+                                           data-toggle="tooltip" data-placement="right"></i>
+                                        <b class="count">50</b>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i title="" class="icon icon-comment" data-original-title="赞同回复"
+                                           data-toggle="tooltip" data-placement="right"></i>
+                                        <b class="count">100</b>
+                                    </a>
+                                </li>
+                                <a class="btn btn-default btn-nav" href="{:U('Article/index')}">阅读全文</a>
                             </ul>
                         </div>
                     </li>
-
                     <li>
                         <div class="topic-head">
-                            <h2 align="left">这是一个问题</h2>
+                            <h3 align="left">{$title}</h3>
 
                             <div class="topic-meta">
                                 <span class="author"><a href="#">gaoyang</a></span>
@@ -295,25 +251,28 @@
                         </div>
 
                         <div class="topic-readmore-btn">
-                            <a class="btn btn-default btn-nav">阅读全文</a>
-                        </div>
-
-                        <hr>
-                        <div class="topic-tips">
                             <ul class="list-inline">
-                                <li><a href="#">Comment:
-                                    <small>100</small>
-                                </a></li>
-                                <li><a href="#">Likes:
-                                    <small>50</small>
-                                </a></li>
+                                <li>
+                                    <a href="#">
+                                        <i title="" class="icon icon-agree" data-original-title="赞同回复"
+                                           data-toggle="tooltip" data-placement="right"></i>
+                                        <b class="count">50</b>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i title="" class="icon icon-comment" data-original-title="赞同回复"
+                                           data-toggle="tooltip" data-placement="right"></i>
+                                        <b class="count">100</b>
+                                    </a>
+                                </li>
+                                <a class="btn btn-default btn-nav" href="{:U('Article/index')}">阅读全文</a>
                             </ul>
                         </div>
                     </li>
-
                     <li>
                         <div class="topic-head">
-                            <h2 align="left">这是一个问题</h2>
+                            <h3 align="left">{$title}</h3>
 
                             <div class="topic-meta">
                                 <span class="author"><a href="#">gaoyang</a></span>
@@ -332,30 +291,96 @@
                         </div>
 
                         <div class="topic-readmore-btn">
-                            <a class="btn btn-default btn-nav">阅读全文</a>
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="#">
+                                        <i title="" class="icon icon-agree" data-original-title="赞同回复"
+                                           data-toggle="tooltip" data-placement="right"></i>
+                                        <b class="count">50</b>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i title="" class="icon icon-comment" data-original-title="赞同回复"
+                                           data-toggle="tooltip" data-placement="right"></i>
+                                        <b class="count">100</b>
+                                    </a>
+                                </li>
+                                <a class="btn btn-default btn-nav" href="{:U('Article/index')}">阅读全文</a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="topic-head">
+                            <h3 align="left">{$title}</h3>
+
+                            <div class="topic-meta">
+                                <span class="author"><a href="#">gaoyang</a></span>
+                                &nbsp;&nbsp;&nbsp;
+                                <span>软件学院</span>
+                                &nbsp;&nbsp;&nbsp;
+                                <span>大二</span>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span>2015年8月15日</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="topic-content">
+                            <p>为什么曹二这么蠢这么蠢这么蠢这么蠢这么蠢这么蠢这么蠢这么
+                                蠢这么蠢这么蠢这么蠢</p>
                         </div>
 
-                        <hr>
-                        <div class="topic-tips">
+                        <div class="topic-readmore-btn">
                             <ul class="list-inline">
-                                <li><a href="#">Comment:
-                                    <small>100</small>
-                                </a></li>
-                                <li><a href="#">Likes:
-                                    <small>50</small>
-                                </a></li>
+                                <li>
+                                    <a href="#">
+                                        <i title="" class="icon icon-agree" data-original-title="赞同回复"
+                                           data-toggle="tooltip" data-placement="right"></i>
+                                        <b class="count">50</b>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i title="" class="icon icon-comment" data-original-title="赞同回复"
+                                           data-toggle="tooltip" data-placement="right"></i>
+                                        <b class="count">100</b>
+                                    </a>
+                                </li>
+                                <a class="btn btn-default btn-nav" href="{:U('Article/index')}">阅读全文</a>
                             </ul>
                         </div>
                     </li>
                 </ul>
-                <div class="load-more">
-                    <a href="#">查看更多</a>
-                </div>
+            <div class="article-more-btn">
+                <a class="btn btn-default btn-nav" id="article-more" style="width:100%">查看更多</a>
             </div>
-        </div>
-
-
+            </div>
         <div class="col-lg-3 sidebar container">
+
+            <div class="sidebar-department-list">
+
+                <div class="department-list">
+                    <div class="list-title">
+                        <h3>院系入口</h3>
+                    </div>
+                    <hr>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><h4>软件学院</h4></a></li>
+                        <li><a href="#"><h4>数学系</h4></a></li>
+                        <li><a href="#"><h4>历史学系</h4></a></li>
+                        <li><a href="#"><h4>哲学系</h4></a></li>
+                        <li><a href="#"><h4>物理学院</h4></a></li>
+                        <li><a href="#"><h4>政府管理学院</h4></a></li>
+                    </ul>
+                </div>
+
+
+                <div class="list-more">
+                    <a class="btn btn-default btn-nav" id="department-more" style="width:100%">更多院系</a>
+                </div>
+
+            </div>
+            <br/>
             <div class="sidebar-hot-topics">
                 <div class="list-title">
                     <h3>热门话题</h3>
@@ -402,7 +427,6 @@
 
             </div>
 
-
         </div>
     </div>
 
@@ -416,5 +440,7 @@
 
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<script src="__PUBLIC__/js/load.js"></script>
 </body>
 </html>

@@ -89,9 +89,9 @@
                     <!-- 用户数据内容 -->
                     <div class="aw-mod aw-user-detail-box">
                         <div class="mod-head">
-                            <img alt="零" src="http://wenda.ghostchina.com/uploads/avatar/000/00/01/66_avatar_max.jpg">
+                            <img alt="gaoyang" src="http://wenda.ghostchina.com/uploads/avatar/000/00/01/66_avatar_max.jpg">
                             <span class="pull-right operate">
-                                                                <a class="text-color-999" onclick="AWS.dialog('inbox', '零');"><i class="icon icon-inbox"></i> 私信</a><a class="text-color-999 hidden-xs" onclick="AWS.dialog('publish', {category_enable:1, ask_user_id:166, ask_user_name:'零'});"><i class="icon icon-at"></i> 问Ta</a><a title="" class="follow btn btn-normal btn-success" onclick="AWS.User.follow($(this), 'user', 166);" href="javascript:;" data-original-title=""><span>关注</span> <em>|</em> <b>0</b></a>
+                                                                <a class="text-color-999" data-toggle="modal" data-target="#new-message"><i class="icon icon-inbox"></i> 私信</a><a class="text-color-999 hidden-xs" onclick="AWS.dialog('publish', {category_enable:1, ask_user_id:166, ask_user_name:'gaoyang'});"><i class="icon icon-at"></i> 问Ta</a><a title="" class="follow btn btn-normal btn-success" onclick="AWS.User.follow($(this), 'user', 166);" href="javascript:;" data-original-title=""><span>关注</span> <em>|</em> <b>0</b></a>
                                                             </span>
                             <h1>gaoyang </h1>
                             <p class="text-color-999">www.gaoyang.com</p>
@@ -100,7 +100,7 @@
                             <div class="meta">
                                 <span><i class="icon icon-agree"></i> 赞同 : <em class="aw-text-color-orange">5</em></span>
                             </div>
-                            <!-- 擅长话题 -->
+                            <!-- 擅长专题 -->
                             <div class="good-at-topics clearfix">
                                 <h2>擅长专题</h2>
                                 <ul>
@@ -114,17 +114,13 @@
                                     </li>
                                 </ul>
                             </div>
-                            <!-- end 擅长话题 -->
+                            <!-- end 擅长专题 -->
 
                         </div>
                         <div class="mod-footer">
                             <ul class="nav nav-tabs aw-nav-tabs">
-                                <li><a id="page_overview" href="#overview" data-toggle="tab">概述</a></li>
-                                <li class="active"><a id="page_questions" href="#questions" data-toggle="tab">发问<span class="badge">7</span></a></li>
-                                <li><a id="page_answers" href="#answers" data-toggle="tab">回复<span class="badge">20</span></a></li>
-                                <li><a id="page_articles" href="#articles" data-toggle="tab">文章</a></li>
-                                <li><a id="page_focus" href="#focus" data-toggle="tab">关注</a></li>
-                                <li><a id="page_actions" href="#actions" data-toggle="tab">动态</a></li>
+                                <li class="active"><a id="page_questions" href="#questions" data-toggle="tab">发贴<span class="badge">7</span></a></li>
+                                <li><a id="page_actions" href="#actions" data-toggle="tab">最近上传</a></li>
                                 <li><a id="page_detail" href="#detail" data-toggle="tab">详细资料</a></li>
                             </ul>
                         </div>
@@ -133,183 +129,10 @@
 
                     <div class="aw-user-center-tab">
                         <div class="tab-content">
-                            <div class="tab-pane" id="overview">
-                                <!-- 回复 -->
-                                <div class="aw-mod">
-                                    <div class="mod-head">
-                                        <h3><a class="pull-right aw-more-content" onclick="$('#page_answers').click();" href="javascript:;">更多 »</a>回复</h3>
-                                    </div>
-                                    <div class="mod-body">
-                                        <div class="aw-profile-answer-list">
-                                            <div class="aw-item">
-                                                <div class="mod-head">
-                                                    <h4><a href="http://wenda.ghostchina.com/question/121">用Nginx做了代理之后，一些资源无法加载</a></h4>
-                                                </div>
-                                                <div class="mod-body">
-                                                    <span class="aw-border-radius-5 count pull-left"><i class="icon icon-agree"></i>0</span>
-                                                    <p class="aw-hide-txt">你這個應該是 ghost.org 上下的英文原版把。它用到了一些國外的 cdn，國內訪問不穩定。解決方法兩個：
-
-                                                        1. 改用 ghostchina.com 上的中文版 ghost
-                                                        2. 自己修改代碼，把國外 cdn 換成國內的。
-
-                                                        用到國外 cdn 應該有 b...</p>
-                                                </div>
-                                            </div>
-                                            <div class="aw-item">
-                                                <div class="mod-head">
-                                                    <h4><a href="http://wenda.ghostchina.com/question/120">设计邮箱有问题</a></h4>
-                                                </div>
-                                                <div class="mod-body">
-                                                    <span class="aw-border-radius-5 count pull-left"><i class="icon icon-agree"></i>0</span>
-                                                    <p class="aw-hide-txt">不是 service，而是 host。</p>
-                                                </div>
-                                            </div>
-                                            <div class="aw-item">
-                                                <div class="mod-head">
-                                                    <h4><a href="http://wenda.ghostchina.com/question/117">ghost 升級 0.5.9 徹底掛了，直接 502，可能是什麼原因？</a></h4>
-                                                </div>
-                                                <div class="mod-body">
-                                                    <span class="aw-border-radius-5 count pull-left"><i class="icon icon-agree"></i>0</span>
-                                                    <p class="aw-hide-txt">自己搞定了，上傳時，直接覆蓋就 OK 了。</p>
-                                                </div>
-                                            </div>
-                                            <div class="aw-item">
-                                                <div class="mod-head">
-                                                    <h4><a href="http://wenda.ghostchina.com/question/108">按照流程安装了nginx和ghost。现在哪个目录是域名的根目录？</a></h4>
-                                                </div>
-                                                <div class="mod-body">
-                                                    <span class="aw-border-radius-5 count pull-left"><i class="icon icon-agree"></i>0</span>
-                                                    <p class="aw-hide-txt">關於 nginx 和 ghost 再追問一下：
-                                                        nginx 將請求傳給 ghost 處理，我理解處理結果還是要返回給 nginx，由 nginx 推送給用戶。那麼 nginx 和 ghost 之間的通信，就是靠着各自配置文件（site-avaible 和 co...</p>
-                                                </div>
-                                            </div>
-                                            <div class="aw-item">
-                                                <div class="mod-head">
-                                                    <h4><a href="http://wenda.ghostchina.com/question/116">请问ghost在config.js里配置email地址的时候能配置163邮箱么，具体怎么配置呢？</a></h4>
-                                                </div>
-                                                <div class="mod-body">
-                                                    <span class="aw-border-radius-5 count pull-left"><i class="icon icon-agree"></i>1</span>
-                                                    <p class="aw-hide-txt">{{{
-                                                        mail: {
-                                                        transport: 'SMTP',
-                                                        from: '自定义发件人地址（注1）',
-                                                        options: {
-                                                        host: 'smtp 邮件发送服务器（注2）',
-                                                        secureConnec...</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end 回复 -->
-
-                                <!-- 发问 -->
-                                <div class="aw-mod">
-                                    <div class="mod-head">
-                                        <h3><a class="pull-right aw-more-content" onclick="$('#page_questions').click();" href="javascript:;">更多 »</a>发问</h3>
-                                    </div>
-                                    <div class="mod-body">
-                                        <div class="aw-profile-publish-list">
-                                            <div class="aw-item">
-                                                <div class="mod-head">
-                                                    <h4><a href="http://wenda.ghostchina.com/question/205">希望tag_cloud可以按名称排序</a></h4>
-                                                </div>
-                                                <div class="mod-body">
-                                                    <span class="aw-border-radius-5 count pull-left"><i class="icon icon-reply"></i>3</span>
-                                                    <p class="aw-hide-txt">243 次浏览 &nbsp;• 4 个关注 &nbsp; • 2015-07-05</p>
-                                                </div>
-                                            </div>
-                                            <div class="aw-item">
-                                                <div class="mod-head">
-                                                    <h4><a href="http://wenda.ghostchina.com/question/151">ghostchina独立的标签云页面是如何制作的？</a></h4>
-                                                </div>
-                                                <div class="mod-body">
-                                                    <span class="aw-border-radius-5 count pull-left"><i class="icon icon-reply"></i>2</span>
-                                                    <p class="aw-hide-txt">328 次浏览 &nbsp;• 2 个关注 &nbsp; • 2015-05-01</p>
-                                                </div>
-                                            </div>
-                                            <div class="aw-item">
-                                                <div class="mod-head">
-                                                    <h4><a href="http://wenda.ghostchina.com/question/117">ghost 升級 0.5.9 徹底掛了，直接 502，可能是什麼原因？</a></h4>
-                                                </div>
-                                                <div class="mod-body">
-                                                    <span class="aw-border-radius-5 count pull-left"><i class="icon icon-reply"></i>1</span>
-                                                    <p class="aw-hide-txt">329 次浏览 &nbsp;• 1 个关注 &nbsp; • 2015-03-11</p>
-                                                </div>
-                                            </div>
-                                            <div class="aw-item">
-                                                <div class="mod-head">
-                                                    <h4><a href="http://wenda.ghostchina.com/question/111">求完整的邮箱设置格式</a></h4>
-                                                </div>
-                                                <div class="mod-body">
-                                                    <span class="aw-border-radius-5 count pull-left"><i class="icon icon-reply"></i>3</span>
-                                                    <p class="aw-hide-txt">334 次浏览 &nbsp;• 3 个关注 &nbsp; • 2015-03-02</p>
-                                                </div>
-                                            </div>
-                                            <div class="aw-item">
-                                                <div class="mod-head">
-                                                    <h4><a href="http://wenda.ghostchina.com/question/108">按照流程安装了nginx和ghost。现在哪个目录是域名的根目录？</a></h4>
-                                                </div>
-                                                <div class="mod-body">
-                                                    <span class="aw-border-radius-5 count pull-left"><i class="icon icon-reply"></i>6</span>
-                                                    <p class="aw-hide-txt">581 次浏览 &nbsp;• 4 个关注 &nbsp; • 2015-02-14</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end 发问 -->
-
-                                <!-- 最新动态 -->
-                                <div class="aw-mod">
-                                    <div class="mod-head">
-                                        <h3><a class="pull-right aw-more-content" onclick="$('#page_actions').click();" href="javascript:;">更多 »</a>动态</h3>
-                                    </div>
-                                    <div class="mod-body">
-                                        <ul>
-                                            <li>
-                                                <p>
-                                                    <span class="pull-right text-color-999">2015-03-26</span>
-                                                    <em class="pull-left"><a class="aw-user-name" href="http://wenda.ghostchina.com/people/166" data-id="166">零</a> 回答了问题,</em>
-                                                    <a class="aw-hide-txt" href="http://wenda.ghostchina.com/question/121">用Nginx做了代理之后，一些资源无法加载</a>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <span class="pull-right text-color-999">2015-03-19</span>
-                                                    <em class="pull-left"><a class="aw-user-name" href="http://wenda.ghostchina.com/people/166" data-id="166">零</a> 回答了问题,</em>
-                                                    <a class="aw-hide-txt" href="http://wenda.ghostchina.com/question/120">设计邮箱有问题</a>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <span class="pull-right text-color-999">2015-03-11</span>
-                                                    <em class="pull-left"><a class="aw-user-name" href="http://wenda.ghostchina.com/people/166" data-id="166">零</a> 回答了问题,</em>
-                                                    <a class="aw-hide-txt" href="http://wenda.ghostchina.com/question/117">ghost 升級 0.5.9 徹底掛了，直接 502，可能是什麼原因？</a>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <span class="pull-right text-color-999">2015-03-10</span>
-                                                    <em class="pull-left"><a class="aw-user-name" href="http://wenda.ghostchina.com/people/166" data-id="166">零</a> 回答了问题,</em>
-                                                    <a class="aw-hide-txt" href="http://wenda.ghostchina.com/question/108">按照流程安装了nginx和ghost。现在哪个目录是域名的根目录？</a>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <span class="pull-right text-color-999">2015-03-10</span>
-                                                    <em class="pull-left"><a class="aw-user-name" href="http://wenda.ghostchina.com/people/166" data-id="166">零</a> 回答了问题,</em>
-                                                    <a class="aw-hide-txt" href="http://wenda.ghostchina.com/question/116">请问ghost在config.js里配置email地址的时候能配置163邮箱么，具体怎么配置呢？</a>
-                                                </p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="tab-pane active" id="questions">
                                 <div class="aw-mod">
                                     <div class="mod-head">
-                                        <h3>发问</h3>
+                                        <h3>发贴</h3>
                                     </div>
                                     <div class="mod-body">
                                         <div class="aw-profile-publish-list" id="contents_user_actions_questions">
@@ -317,7 +140,7 @@
                                                 <div class="aw-mod">
                                                     <div class="mod-head">
                                                         <h4 class="aw-hide-txt">
-                                                            <a href="http://wenda.ghostchina.com/question/205">希望tag_cloud可以按名称排序</a>
+                                                            <a href="#205">C++该怎么学</a>
                                                         </h4>
                                                     </div>
                                                     <div class="mod-body">
@@ -332,7 +155,7 @@
                                                 <div class="aw-mod">
                                                     <div class="mod-head">
                                                         <h4 class="aw-hide-txt">
-                                                            <a href="http://wenda.ghostchina.com/question/151">ghostchina独立的标签云页面是如何制作的？</a>
+                                                            <a href="#151">如何查看网页字体？</a>
                                                         </h4>
                                                     </div>
                                                     <div class="mod-body">
@@ -347,7 +170,7 @@
                                                 <div class="aw-mod">
                                                     <div class="mod-head">
                                                         <h4 class="aw-hide-txt">
-                                                            <a href="http://wenda.ghostchina.com/question/117">ghost 升級 0.5.9 徹底掛了，直接 502，可能是什麼原因？</a>
+                                                            <a href="#117">升级win10</a>
                                                         </h4>
                                                     </div>
                                                     <div class="mod-body">
@@ -362,7 +185,7 @@
                                                 <div class="aw-mod">
                                                     <div class="mod-head">
                                                         <h4 class="aw-hide-txt">
-                                                            <a href="http://wenda.ghostchina.com/question/111">求完整的邮箱设置格式</a>
+                                                            <a href="http://wenda.ghostchina.com/question/111">如何吸引风投？</a>
                                                         </h4>
                                                     </div>
                                                     <div class="mod-body">
@@ -377,7 +200,7 @@
                                                 <div class="aw-mod">
                                                     <div class="mod-head">
                                                         <h4 class="aw-hide-txt">
-                                                            <a href="http://wenda.ghostchina.com/question/108">按照流程安装了nginx和ghost。现在哪个目录是域名的根目录？</a>
+                                                            <a href="http://wenda.ghostchina.com/question/108">何种望远镜能看清月球上的坑？</a>
                                                         </h4>
                                                     </div>
                                                     <div class="mod-body">
@@ -407,7 +230,7 @@
                                                 <div class="aw-mod">
                                                     <div class="mod-head">
                                                         <h4 class="aw-hide-txt">
-                                                            <a href="http://wenda.ghostchina.com/question/92">在文章页点击左上角『首页』跳到另外一个域名</a>
+                                                            <a href="http://wenda.ghostchina.com/question/92">E-Learning首页查看</a>
                                                         </h4>
                                                     </div>
                                                     <div class="mod-body">
@@ -428,512 +251,68 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane" id="answers">
-                                <div class="aw-mod">
-                                    <div class="mod-head">
-                                        <h3>回复</h3>
-                                    </div>
-                                    <div class="mod-body">
-                                        <div class="aw-profile-answer-list" id="contents_user_actions_answers">
-                                            <div class="aw-item">
-                                                <div class="aw-mod">
-                                                    <div class="mod-head">
-                                                        <h4 class="aw-hide-txt">
-                                                            <a href="http://wenda.ghostchina.com/question/121">用Nginx做了代理之后，一些资源无法加载</a>
-                                                        </h4>
-                                                    </div>
-                                                    <div class="mod-body">
-                                                        <span class="aw-border-radius-5 count pull-left"><i class="icon icon-agree"></i>0</span>
-                                                        <p class="text-color-999">你這個應該是 ghost.org 上下的英文原版把。它用到了一些國外的 cdn，國內訪問不穩定。解決方法兩個：
-
-                                                            1. 改用 ghostchina.com 上的中文版 ghost
-                                                            2. 自己修改代碼，把國外 cdn 換成國內的。
-
-                                                            用到國外 cdn 應該有 b...</p>
-                                                        <p class="text-color-999">2015-03-26 19:49</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="aw-item">
-                                                <div class="aw-mod">
-                                                    <div class="mod-head">
-                                                        <h4 class="aw-hide-txt">
-                                                            <a href="http://wenda.ghostchina.com/question/120">设计邮箱有问题</a>
-                                                        </h4>
-                                                    </div>
-                                                    <div class="mod-body">
-                                                        <span class="aw-border-radius-5 count pull-left"><i class="icon icon-agree"></i>0</span>
-                                                        <p class="text-color-999">不是 service，而是 host。</p>
-                                                        <p class="text-color-999">2015-03-19 11:12</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="aw-item">
-                                                <div class="aw-mod">
-                                                    <div class="mod-head">
-                                                        <h4 class="aw-hide-txt">
-                                                            <a href="http://wenda.ghostchina.com/question/117">ghost 升級 0.5.9 徹底掛了，直接 502，可能是什麼原因？</a>
-                                                        </h4>
-                                                    </div>
-                                                    <div class="mod-body">
-                                                        <span class="aw-border-radius-5 count pull-left"><i class="icon icon-agree"></i>0</span>
-                                                        <p class="text-color-999">自己搞定了，上傳時，直接覆蓋就 OK 了。</p>
-                                                        <p class="text-color-999">2015-03-11 19:39</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="aw-item">
-                                                <div class="aw-mod">
-                                                    <div class="mod-head">
-                                                        <h4 class="aw-hide-txt">
-                                                            <a href="http://wenda.ghostchina.com/question/108">按照流程安装了nginx和ghost。现在哪个目录是域名的根目录？</a>
-                                                        </h4>
-                                                    </div>
-                                                    <div class="mod-body">
-                                                        <span class="aw-border-radius-5 count pull-left"><i class="icon icon-agree"></i>0</span>
-                                                        <p class="text-color-999">關於 nginx 和 ghost 再追問一下：
-                                                            nginx 將請求傳給 ghost 處理，我理解處理結果還是要返回給 nginx，由 nginx 推送給用戶。那麼 nginx 和 ghost 之間的通信，就是靠着各自配置文件（site-avaible 和 co...</p>
-                                                        <p class="text-color-999">2015-03-10 14:57</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="aw-item">
-                                                <div class="aw-mod">
-                                                    <div class="mod-head">
-                                                        <h4 class="aw-hide-txt">
-                                                            <a href="http://wenda.ghostchina.com/question/116">请问ghost在config.js里配置email地址的时候能配置163邮箱么，具体怎么配置呢？</a>
-                                                        </h4>
-                                                    </div>
-                                                    <div class="mod-body">
-                                                        <span class="aw-border-radius-5 count pull-left"><i class="icon icon-agree"></i>1</span>
-                                                        <p class="text-color-999">{{{
-                                                            mail: {
-                                                            transport: 'SMTP',
-                                                            from: '自定义发件人地址（注1）',
-                                                            options: {
-                                                            host: 'smtp 邮件发送服务器（注2）',
-                                                            secureConnec...</p>
-                                                        <p class="text-color-999">2015-03-10 13:06</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="aw-item">
-                                                <div class="aw-mod">
-                                                    <div class="mod-head">
-                                                        <h4 class="aw-hide-txt">
-                                                            <a href="http://wenda.ghostchina.com/question/31">建议各位把自己头像完善一下！！！</a>
-                                                        </h4>
-                                                    </div>
-                                                    <div class="mod-body">
-                                                        <span class="aw-border-radius-5 count pull-left"><i class="icon icon-agree"></i>1</span>
-                                                        <p class="text-color-999">響應號召，哈哈。。。</p>
-                                                        <p class="text-color-999">2015-03-09 23:32</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="aw-item">
-                                                <div class="aw-mod">
-                                                    <div class="mod-head">
-                                                        <h4 class="aw-hide-txt">
-                                                            <a href="http://wenda.ghostchina.com/question/99">亲爱大拿们，你们都在用什么云服务器上运行Ghost呢？</a>
-                                                        </h4>
-                                                    </div>
-                                                    <div class="mod-body">
-                                                        <span class="aw-border-radius-5 count pull-left"><i class="icon icon-agree"></i>0</span>
-                                                        <p class="text-color-999">阿里雲，國產也挺好的。而且關於怎麼在阿里雲上搭建 ghost 博客，ghoschina.com 有完整的教程。</p>
-                                                        <p class="text-color-999">2015-03-09 23:32</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="aw-item">
-                                                <div class="aw-mod">
-                                                    <div class="mod-head">
-                                                        <h4 class="aw-hide-txt">
-                                                            <a href="http://wenda.ghostchina.com/question/111">求完整的邮箱设置格式</a>
-                                                        </h4>
-                                                    </div>
-                                                    <div class="mod-body">
-                                                        <span class="aw-border-radius-5 count pull-left"><i class="icon icon-agree"></i>0</span>
-                                                        <p class="text-color-999">謝謝大家了。發現我自己的格式是對的，輸入密碼是用的是 rime，所以導致一直說 auth 不對。</p>
-                                                        <p class="text-color-999">2015-03-07 22:00</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="aw-item">
-                                                <div class="aw-mod">
-                                                    <div class="mod-head">
-                                                        <h4 class="aw-hide-txt">
-                                                            <a href="http://wenda.ghostchina.com/question/108">按照流程安装了nginx和ghost。现在哪个目录是域名的根目录？</a>
-                                                        </h4>
-                                                    </div>
-                                                    <div class="mod-body">
-                                                        <span class="aw-border-radius-5 count pull-left"><i class="icon icon-agree"></i>0</span>
-                                                        <p class="text-color-999">好像不對把，我在 `/srv/ghost/`
-                                                            中新建 `test.html` 使用
-                                                            `http://www.mydomain.com/test.html` 不能訪問的。
-
-                                                            感覺 wordpress 的邏輯簡單多了，對主域名的訪問就是訪問根目錄，html 就...</p>
-                                                        <p class="text-color-999">2015-03-07 21:52</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="mod-footer">
-                                        <!-- 加载更多内容 -->
-                                        <a class="aw-load-more-content" id="bp_user_actions_answers_more" data-page="1">
-                                            <span>更多</span>
-                                        </a>
-                                        <!-- end 加载更多内容 -->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="articles">
-                                <div class="aw-mod">
-                                    <div class="mod-head">
-                                        <h3>文章</h3>
-                                    </div>
-                                    <div class="mod-body">
-                                        <div class="aw-profile-publish-list" id="contents_user_actions_articles"><p align="center" style="padding: 15px 0">没有内容</p></div>
-                                    </div>
-                                    <div class="mod-footer">
-                                        <!-- 加载更多内容 -->
-                                        <a class="aw-load-more-content disabled" id="bp_user_actions_articles_more" data-page="0">
-                                            <span>没有更多了</span>
-                                        </a>
-                                        <!-- end 加载更多内容 -->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="focus">
-                                <!-- 自定义切换 -->
-                                <div class="aw-mod">
-                                    <div class="aw-tabs text-center">
-                                        <ul>
-                                            <li class="active"><a>关注的人</a></li>
-                                            <li><a>关注者</a></li>
-                                            <li><a>关注的话题</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="mod-body">
-                                        <div class="aw-tab-content">
-                                            <div class="aw-mod aw-user-center-follow-mod">
-                                                <div class="mod-body">
-                                                    <ul class="clearfix" id="contents_user_follows"><li>
-                                                        <div class="mod-head">
-                                                            <a class="aw-user-img pull-left aw-border-radius-5" href="http://wenda.ghostchina.com/people/wangsai" data-id="2">
-                                                                <img alt="王赛" src="http://wenda.ghostchina.com/uploads/avatar/000/00/00/02_avatar_mid.jpg">
-                                                            </a>
-                                                            <p><a href="http://wenda.ghostchina.com/people/wangsai">王赛</a></p>
-                                                        </div>
-                                                        <div class="mod-body">
-                                                            <p class="text-color-999 aw-hide-txt"></p>
-                                                        </div>
-                                                        <div class="mod-footer meta">
-                                                            <span><i class="icon icon-prestige"></i>威望 <em class="aw-text-color-green">21</em></span>
-                                                            <span><i class="icon icon-agree"></i>赞同 <em class="aw-text-color-orange">20</em></span>
-                                                            <!-- <span><i class="icon icon-thank"></i>感谢 <em class="aw-text-color-orange">12</em></span> -->
-                                                        </div>
-                                                    </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="mod-footer">
-                                                    <!-- 加载更多内容 -->
-                                                    <a class="aw-load-more-content" id="bp_user_follows_more" data-page="1">
-                                                        <span>更多</span>
-                                                    </a>
-                                                    <!-- end 加载更多内容 -->
-                                                </div>
-                                            </div>
-                                            <div class="aw-mod aw-user-center-follow-mod hide">
-                                                <div class="mod-body">
-                                                    <ul class="clearfix" id="contents_user_fans"><p align="center" style="padding: 15px 0">没有内容</p></ul>
-                                                </div>
-                                                <div class="mod-footer">
-                                                    <!-- 加载更多内容 -->
-                                                    <a class="aw-load-more-content disabled" id="bp_user_fans_more" data-page="0">
-                                                        <span>没有更多了</span>
-                                                    </a>
-                                                    <!-- end 加载更多内容 -->
-                                                </div>
-                                            </div>
-                                            <div class="aw-mod aw-user-center-follow-mod hide">
-                                                <div class="mod-body">
-                                                    <ul class="clearfix" id="contents_user_topics"><li>
-                                                        <div class="mod-head">
-                                                            <a class="aw-topic-img pull-left aw-border-radius-5" href="http://wenda.ghostchina.com/topic/%E6%A0%87%E7%AD%BE%E4%BA%91" data-id="52">
-                                                                <img alt="标签云" src="http://wenda.ghostchina.com/static/common/topic-mid-img.png">
-                                                            </a>
-                                                            <p><a class="aw-topic-name" href="http://wenda.ghostchina.com/topic/%E6%A0%87%E7%AD%BE%E4%BA%91" data-id="52"><span>标签云</span></a></p>
-                                                        </div>
-                                                        <div class="mod-footer">
-                                                            <p class="aw-user-center-follow-meta">
-                                                                2 个讨论			 •
-                                                                2 个关注		</p>
-                                                        </div>
-                                                    </li>
-                                                        <li>
-                                                            <div class="mod-head">
-                                                                <a class="aw-topic-img pull-left aw-border-radius-5" href="http://wenda.ghostchina.com/topic/%E9%93%BE%E6%8E%A5" data-id="31">
-                                                                    <img alt="链接" src="http://wenda.ghostchina.com/static/common/topic-mid-img.png">
-                                                                </a>
-                                                                <p><a class="aw-topic-name" href="http://wenda.ghostchina.com/topic/%E9%93%BE%E6%8E%A5" data-id="31"><span>链接</span></a></p>
-                                                            </div>
-                                                            <div class="mod-footer">
-                                                                <p class="aw-user-center-follow-meta">
-                                                                    1 个讨论			 •
-                                                                    1 个关注		</p>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="mod-head">
-                                                                <a class="aw-topic-img pull-left aw-border-radius-5" href="http://wenda.ghostchina.com/topic/url" data-id="32">
-                                                                    <img alt="url" src="http://wenda.ghostchina.com/static/common/topic-mid-img.png">
-                                                                </a>
-                                                                <p><a class="aw-topic-name" href="http://wenda.ghostchina.com/topic/url" data-id="32"><span>url</span></a></p>
-                                                            </div>
-                                                            <div class="mod-footer">
-                                                                <p class="aw-user-center-follow-meta">
-                                                                    1 个讨论			 •
-                                                                    1 个关注		</p>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="mod-head">
-                                                                <a class="aw-topic-img pull-left aw-border-radius-5" href="http://wenda.ghostchina.com/topic/%E9%82%AE%E7%AE%B1" data-id="42">
-                                                                    <img alt="邮箱" src="http://wenda.ghostchina.com/static/common/topic-mid-img.png">
-                                                                </a>
-                                                                <p><a class="aw-topic-name" href="http://wenda.ghostchina.com/topic/%E9%82%AE%E7%AE%B1" data-id="42"><span>邮箱</span></a></p>
-                                                            </div>
-                                                            <div class="mod-footer">
-                                                                <p class="aw-user-center-follow-meta">
-                                                                    1 个讨论			 •
-                                                                    1 个关注		</p>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="mod-head">
-                                                                <a class="aw-topic-img pull-left aw-border-radius-5" href="http://wenda.ghostchina.com/topic/%E5%8D%87%E7%B4%9A" data-id="43">
-                                                                    <img alt="升級" src="http://wenda.ghostchina.com/static/common/topic-mid-img.png">
-                                                                </a>
-                                                                <p><a class="aw-topic-name" href="http://wenda.ghostchina.com/topic/%E5%8D%87%E7%B4%9A" data-id="43"><span>升級</span></a></p>
-                                                            </div>
-                                                            <div class="mod-footer">
-                                                                <p class="aw-user-center-follow-meta">
-                                                                    1 个讨论			 •
-                                                                    1 个关注		</p>
-                                                            </div>
-                                                        </li>
-
-                                                    </ul>
-                                                </div>
-                                                <div class="mod-footer">
-                                                    <!-- 加载更多内容 -->
-                                                    <a class="aw-load-more-content" id="bp_user_topics_more" data-page="1">
-                                                        <span>更多</span>
-                                                    </a>
-                                                    <!-- end 加载更多内容 -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end 自定义切换 -->
-                            </div>
                             <div class="tab-pane" id="actions">
                                 <div class="aw-mod">
                                     <div class="mod-head">
-                                        <h3>最新动态</h3>
+                                        <h3>上传资料</h3>
                                     </div>
                                     <div class="mod-body">
-                                        <div id="contents_user_actions"><div class="aw-item">
-                                            <p>
-                                                <span class="pull-right text-color-999">2015-07-05</span>
-                                                <em class="pull-left"><a class="aw-user-name" href="http://wenda.ghostchina.com/people/166" data-id="166">零</a> 将该问题添加到 <a class="aw-topic-name" href="http://wenda.ghostchina.com/topic/%E6%A0%87%E7%AD%BE%E4%BA%91" data-id="52">标签云</a> 话题:</em>
-
-                                                <a class="aw-hide-txt" href="http://wenda.ghostchina.com/question/205">希望tag_cloud可以按名称排序</a>
-
-                                            </p>
-                                        </div>
+                                        <div id="contents_user_actions">
                                             <div class="aw-item">
                                                 <p>
                                                     <span class="pull-right text-color-999">2015-07-05</span>
-                                                    <em class="pull-left"><a class="aw-user-name" href="http://wenda.ghostchina.com/people/166" data-id="166">零</a> 发起了问题:</em>
+                                                    <em class="pull-left"><a class="aw-user-name" href="http://wenda.ghostchina.com/people/166" data-id="166">gaoyang</a> 上传了资料:</em>
 
-                                                    <a class="aw-hide-txt" href="http://wenda.ghostchina.com/question/205">希望tag_cloud可以按名称排序</a>
+                                                    <a class="aw-hide-txt" href="http://wenda.ghostchina.com/question/205">ThinkPHP免费视频教程</a>
+
+                                                </p>
+                                            </div>
+
+                                            <div class="aw-item">
+                                                <p>
+                                                    <span class="pull-right text-color-999">2015-07-05</span>
+                                                    <em class="pull-left"><a class="aw-user-name" href="http://wenda.ghostchina.com/people/166" data-id="166">gaoyang</a> 上传了资料:</em>
+
+                                                    <a class="aw-hide-txt" href="http://wenda.ghostchina.com/question/205">ThinkPHP免费视频教程</a>
 
                                                 </p>
                                             </div>
                                             <div class="aw-item">
                                                 <p>
-                                                    <span class="pull-right text-color-999">2015-05-01</span>
-                                                    <em class="pull-left"><a class="aw-user-name" href="http://wenda.ghostchina.com/people/166" data-id="166">零</a> 发起了问题:</em>
+                                                    <span class="pull-right text-color-999">2015-07-05</span>
+                                                    <em class="pull-left"><a class="aw-user-name" href="http://wenda.ghostchina.com/people/166" data-id="166">gaoyang</a> 上传了资料:</em>
 
-                                                    <a class="aw-hide-txt" href="http://wenda.ghostchina.com/question/151">ghostchina独立的标签云页面是如何制作的？</a>
-
-                                                </p>
-                                            </div>
-                                            <div class="aw-item">
-                                                <p>
-                                                    <span class="pull-right text-color-999">2015-05-01</span>
-                                                    <em class="pull-left"><a class="aw-user-name" href="http://wenda.ghostchina.com/people/166" data-id="166">零</a> 将该问题添加到 <a class="aw-topic-name" href="http://wenda.ghostchina.com/topic/%E6%A0%87%E7%AD%BE%E4%BA%91" data-id="52">标签云</a> 话题:</em>
-
-                                                    <a class="aw-hide-txt" href="http://wenda.ghostchina.com/question/151">ghostchina独立的标签云页面是如何制作的？</a>
+                                                    <a class="aw-hide-txt" href="http://wenda.ghostchina.com/question/205">ThinkPHP免费视频教程</a>
 
                                                 </p>
                                             </div>
                                             <div class="aw-item">
                                                 <p>
-                                                    <span class="pull-right text-color-999">2015-03-26</span>
-                                                    <em class="pull-left"><a class="aw-user-name" href="http://wenda.ghostchina.com/people/166" data-id="166">零</a> 回答了问题:</em>
+                                                    <span class="pull-right text-color-999">2015-07-05</span>
+                                                    <em class="pull-left"><a class="aw-user-name" href="http://wenda.ghostchina.com/people/166" data-id="166">gaoyang</a> 上传了资料:</em>
 
-                                                    <a class="aw-hide-txt" href="http://wenda.ghostchina.com/question/121">用Nginx做了代理之后，一些资源无法加载</a>
-
-                                                </p>
-                                            </div>
-                                            <div class="aw-item">
-                                                <p>
-                                                    <span class="pull-right text-color-999">2015-03-19</span>
-                                                    <em class="pull-left"><a class="aw-user-name" href="http://wenda.ghostchina.com/people/166" data-id="166">零</a> 回答了问题:</em>
-
-                                                    <a class="aw-hide-txt" href="http://wenda.ghostchina.com/question/120">设计邮箱有问题</a>
+                                                    <a class="aw-hide-txt" href="http://wenda.ghostchina.com/question/205">ThinkPHP免费视频教程</a>
 
                                                 </p>
                                             </div>
                                             <div class="aw-item">
                                                 <p>
-                                                    <span class="pull-right text-color-999">2015-03-11</span>
-                                                    <em class="pull-left"><a class="aw-user-name" href="http://wenda.ghostchina.com/people/166" data-id="166">零</a> 回答了问题:</em>
+                                                    <span class="pull-right text-color-999">2015-07-05</span>
+                                                    <em class="pull-left"><a class="aw-user-name" href="http://wenda.ghostchina.com/people/166" data-id="166">gaoyang</a> 上传了资料:</em>
 
-                                                    <a class="aw-hide-txt" href="http://wenda.ghostchina.com/question/117">ghost 升級 0.5.9 徹底掛了，直接 502，可能是什麼原因？</a>
-
-                                                </p>
-                                            </div>
-                                            <div class="aw-item">
-                                                <p>
-                                                    <span class="pull-right text-color-999">2015-03-11</span>
-                                                    <em class="pull-left"><a class="aw-user-name" href="http://wenda.ghostchina.com/people/166" data-id="166">零</a> 发起了问题:</em>
-
-                                                    <a class="aw-hide-txt" href="http://wenda.ghostchina.com/question/117">ghost 升級 0.5.9 徹底掛了，直接 502，可能是什麼原因？</a>
+                                                    <a class="aw-hide-txt" href="http://wenda.ghostchina.com/question/205">ThinkPHP免费视频教程</a>
 
                                                 </p>
-                                            </div>
-                                            <div class="aw-item">
-                                                <p>
-                                                    <span class="pull-right text-color-999">2015-03-11</span>
-                                                    <em class="pull-left"><a class="aw-user-name" href="http://wenda.ghostchina.com/people/166" data-id="166">零</a> 将该问题添加到 <a class="aw-topic-name" href="http://wenda.ghostchina.com/topic/%E5%8D%87%E7%B4%9A" data-id="43">升級</a> 话题:</em>
+                                            </div>                                            <div class="aw-item">
+                                            <p>
+                                                <span class="pull-right text-color-999">2015-07-05</span>
+                                                <em class="pull-left"><a class="aw-user-name" href="http://wenda.ghostchina.com/people/166" data-id="166">gaoyang</a> 上传了资料:</em>
 
-                                                    <a class="aw-hide-txt" href="http://wenda.ghostchina.com/question/117">ghost 升級 0.5.9 徹底掛了，直接 502，可能是什麼原因？</a>
+                                                <a class="aw-hide-txt" href="http://wenda.ghostchina.com/question/205">ThinkPHP免费视频教程</a>
 
-                                                </p>
-                                            </div>
-                                            <div class="aw-item">
-                                                <p>
-                                                    <span class="pull-right text-color-999">2015-03-10</span>
-                                                    <em class="pull-left"><a class="aw-user-name" href="http://wenda.ghostchina.com/people/166" data-id="166">零</a> 回答了问题:</em>
+                                            </p>
+                                        </div>
 
-                                                    <a class="aw-hide-txt" href="http://wenda.ghostchina.com/question/108">按照流程安装了nginx和ghost。现在哪个目录是域名的根目录？</a>
-
-                                                </p>
-                                            </div>
-                                            <div class="aw-item">
-                                                <p>
-                                                    <span class="pull-right text-color-999">2015-03-10</span>
-                                                    <em class="pull-left"><a class="aw-user-name" href="http://wenda.ghostchina.com/people/166" data-id="166">零</a> 回答了问题:</em>
-
-                                                    <a class="aw-hide-txt" href="http://wenda.ghostchina.com/question/116">请问ghost在config.js里配置email地址的时候能配置163邮箱么，...</a>
-
-                                                </p>
-                                            </div>
-                                            <div class="aw-item">
-                                                <p>
-                                                    <span class="pull-right text-color-999">2015-03-09</span>
-                                                    <em class="pull-left"><a class="aw-user-name" href="http://wenda.ghostchina.com/people/166" data-id="166">零</a> 回答了问题:</em>
-
-                                                    <a class="aw-hide-txt" href="http://wenda.ghostchina.com/question/31">建议各位把自己头像完善一下！！！</a>
-
-                                                </p>
-                                            </div>
-                                            <div class="aw-item">
-                                                <p>
-                                                    <span class="pull-right text-color-999">2015-03-09</span>
-                                                    <em class="pull-left"><a class="aw-user-name" href="http://wenda.ghostchina.com/people/166" data-id="166">零</a> 回答了问题:</em>
-
-                                                    <a class="aw-hide-txt" href="http://wenda.ghostchina.com/question/99">亲爱大拿们，你们都在用什么云服务器上运行Ghost呢？</a>
-
-                                                </p>
-                                            </div>
-                                            <div class="aw-item">
-                                                <p>
-                                                    <span class="pull-right text-color-999">2015-03-07</span>
-                                                    <em class="pull-left"><a class="aw-user-name" href="http://wenda.ghostchina.com/people/166" data-id="166">零</a> 回答了问题:</em>
-
-                                                    <a class="aw-hide-txt" href="http://wenda.ghostchina.com/question/111">求完整的邮箱设置格式</a>
-
-                                                </p>
-                                            </div>
-                                            <div class="aw-item">
-                                                <p>
-                                                    <span class="pull-right text-color-999">2015-03-07</span>
-                                                    <em class="pull-left"><a class="aw-user-name" href="http://wenda.ghostchina.com/people/166" data-id="166">零</a> 回答了问题:</em>
-
-                                                    <a class="aw-hide-txt" href="http://wenda.ghostchina.com/question/108">按照流程安装了nginx和ghost。现在哪个目录是域名的根目录？</a>
-
-                                                </p>
-                                            </div>
-                                            <div class="aw-item">
-                                                <p>
-                                                    <span class="pull-right text-color-999">2015-03-02</span>
-                                                    <em class="pull-left"><a class="aw-user-name" href="http://wenda.ghostchina.com/people/166" data-id="166">零</a> 发起了问题:</em>
-
-                                                    <a class="aw-hide-txt" href="http://wenda.ghostchina.com/question/111">求完整的邮箱设置格式</a>
-
-                                                </p>
-                                            </div>
-                                            <div class="aw-item">
-                                                <p>
-                                                    <span class="pull-right text-color-999">2015-03-02</span>
-                                                    <em class="pull-left"><a class="aw-user-name" href="http://wenda.ghostchina.com/people/166" data-id="166">零</a> 将该问题添加到 <a class="aw-topic-name" href="http://wenda.ghostchina.com/topic/%E9%82%AE%E7%AE%B1" data-id="42">邮箱</a> 话题:</em>
-
-                                                    <a class="aw-hide-txt" href="http://wenda.ghostchina.com/question/111">求完整的邮箱设置格式</a>
-
-                                                </p>
-                                            </div>
-                                            <div class="aw-item">
-                                                <p>
-                                                    <span class="pull-right text-color-999">2015-02-14</span>
-                                                    <em class="pull-left"><a class="aw-user-name" href="http://wenda.ghostchina.com/people/166" data-id="166">零</a> 发起了问题:</em>
-
-                                                    <a class="aw-hide-txt" href="http://wenda.ghostchina.com/question/108">按照流程安装了nginx和ghost。现在哪个目录是域名的根目录？</a>
-
-                                                </p>
-                                            </div>
-                                            <div class="aw-item">
-                                                <p>
-                                                    <span class="pull-right text-color-999">2015-02-14</span>
-                                                    <em class="pull-left"><a class="aw-user-name" href="http://wenda.ghostchina.com/people/166" data-id="166">零</a> 将该问题添加到 <a class="aw-topic-name" href="http://wenda.ghostchina.com/topic/%E5%AE%89%E8%A3%85" data-id="33">安装</a> 话题:</em>
-
-                                                    <a class="aw-hide-txt" href="http://wenda.ghostchina.com/question/108">按照流程安装了nginx和ghost。现在哪个目录是域名的根目录？</a>
-
-                                                </p>
-                                            </div>
-                                            <div class="aw-item">
-                                                <p>
-                                                    <span class="pull-right text-color-999">2015-01-22</span>
-                                                    <em class="pull-left"><a class="aw-user-name" href="http://wenda.ghostchina.com/people/166" data-id="166">零</a> 发起了问题:</em>
-
-                                                    <a class="aw-hide-txt" href="http://wenda.ghostchina.com/question/95">为什么下载被chrome提示有风险？？</a>
-
-                                                </p>
-                                            </div>
                                         </div>
                                     </div>
                                     <div class="mod-footer">
@@ -1000,7 +379,7 @@
                             <span>
                                 关注 <em class="aw-text-color-blue">1</em> 人                            </span>
                             <p>
-                                <a class="aw-user-name" href="http://wenda.ghostchina.com/people/wangsai" data-id="2"><img alt="王赛" src="http://wenda.ghostchina.com/uploads/avatar/000/00/00/02_avatar_mid.jpg"></a>
+                                <a class="aw-user-name" href="http://wenda.ghostchina.com/people/wangsai" data-id="2"><img alt="gaoyang" src="http://wenda.ghostchina.com/uploads/avatar/000/00/00/02_avatar_mid.jpg"></a>
                             </p>
                         </div>
                     </div>
@@ -1018,19 +397,19 @@
                             关注 <em class="aw-text-color-blue">5</em> 话题                                                        <div class="aw-topic-bar">
                             <div class="tag-bar clearfix">
                                                                             <span class="topic-tag">
-                                            <a class="text" href="http://wenda.ghostchina.com/topic/%E6%A0%87%E7%AD%BE%E4%BA%91" data-id="52">标签云</a>
+                                            <a class="text" href="http://wenda.ghostchina.com/topic/%E6%A0%87%E7%AD%BE%E4%BA%91" data-id="52">软件学院</a>
                                         </span>
                                                                             <span class="topic-tag">
-                                            <a class="text" href="http://wenda.ghostchina.com/topic/%E9%93%BE%E6%8E%A5" data-id="31">链接</a>
+                                            <a class="text" href="http://wenda.ghostchina.com/topic/%E9%93%BE%E6%8E%A5" data-id="31">商学院</a>
                                         </span>
                                                                             <span class="topic-tag">
-                                            <a class="text" href="http://wenda.ghostchina.com/topic/url" data-id="32">url</a>
+                                            <a class="text" href="http://wenda.ghostchina.com/topic/url" data-id="32">文学院</a>
                                         </span>
                                                                             <span class="topic-tag">
-                                            <a class="text" href="http://wenda.ghostchina.com/topic/%E9%82%AE%E7%AE%B1" data-id="42">邮箱</a>
+                                            <a class="text" href="http://wenda.ghostchina.com/topic/%E9%82%AE%E7%AE%B1" data-id="42">新闻传播学院</a>
                                         </span>
                                                                             <span class="topic-tag">
-                                            <a class="text" href="http://wenda.ghostchina.com/topic/%E5%8D%87%E7%B4%9A" data-id="43">升級</a>
+                                            <a class="text" href="http://wenda.ghostchina.com/topic/%E5%8D%87%E7%B4%9A" data-id="43">哲学系</a>
                                         </span>
                             </div>
                         </div>
@@ -1077,6 +456,38 @@
 
 <!-- Escape time: 0.10908007621765 --><!-- / DO NOT REMOVE -->
 
-
+<!--Do Not Remove-->
+<div class="aw-ajax-box" id="aw-ajax-box">
+    <div class="modal fade alert-box aw-inbox" id="new-message" aria-hidden="true" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="close icon icon-delete" aria-hidden="true" type="button" data-dismiss="modal"></a>
+                    <h3 class="modal-title" id="myModalLabel">新私信</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-danger hide error_message">
+                        <i class="icon icon-delete"></i>
+                        <em></em>
+                    </div>
+                    <form id="quick_publish" onsubmit="return false" action="http://wenda.ghostchina.com/inbox/ajax/send/" method="post">
+                        <input name="post_hash" type="hidden" value="2F2157E31DEBD9E1">
+                        <input name="recipient" class="form-control" id="invite-input" type="text" placeholder="搜索用户" value="gaoyang">
+                        <div class="aw-dropdown">
+                            <p class="title">没有找到相关结果</p>
+                            <ul class="aw-dropdown-list"></ul>
+                        </div>
+                        <textarea name="message" class="form-control" placeholder="私信内容..." rows="3"></textarea>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a class="text-color-999" aria-hidden="true" data-dismiss="modal">取消</a>
+                    <button class="btn btn-large btn-success" onclick="AWS.ajax_post($('#quick_publish'), AWS.ajax_processer, 'error_message');">发送</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Do Not Remove-End-->
 </body>
 </html>
