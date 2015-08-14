@@ -36,11 +36,10 @@
 
         <div id="navtabs" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active nav-current" role="presentation"><a href="{:U('Index/index')}">Home</a></li>
-                <li><a href="#">My Courses</a></li>
-                <li><a href="#">Topics</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="#">ContactUs</a></li>
+                <li class="active nav-current" role="presentation"><a href="{:U('Index/index')}">首页</a></li>
+                <li><a href="#">我的课程</a></li>
+                <li><a href="#">讨论区</a></li>
+                <li><a href="#">联系我们</a></li>
             </ul>
 
             <ul id="settings" class="nav navbar-nav navbar-right">
@@ -69,6 +68,23 @@
 <div class="container main-content" style="padding-top: 40px">
     <div class="row">
         <div class="col-lg-9">
+            <div class="mod-body">
+                <div class="aw-mod aw-editor-box">
+                    <div class="mod-head">
+                        <div class="wmd-panel">
+                            <textarea name="answer_content" class="wmd-input form-control autosize" placeholder="快来发表新的问题..." id="wmd-input" style="height: 100px; overflow: hidden; overflow-y: hidden; word-wrap: break-word;" rows="15"></textarea>
+                        </div>
+                    </div>
+                    <div class="mod-body clearfix">
+                        <a class="btn btn-default btn-nav pull-right"  href="javascript:;">发表</a>
+                        <span class="pull-right text-color-999" id="answer_content_message">&nbsp;</span>
+                    </div>
+                    <div class="mod-footer">
+                        <div class="wmd-panel wmd-preview" id="wmd-preview" style="display: none;"></div>
+                    </div>
+                </div>
+
+            </div>
                 <ul class="topic-list list-unstyled list-group">
                     <li>
                         <div class="topic-head">
@@ -87,13 +103,13 @@
                         <hr>
                         <div class="topic-content">
                             <p>为什么曹二这么蠢这么蠢这么蠢这么蠢这么蠢这么蠢这么蠢这么
-                                蠢这么蠢这么蠢这么蠢</p>
+                                蠢这么蠢这么蠢这么蠢</p>s
                         </div>
 
                         <div class="topic-readmore-btn">
                             <ul class="list-inline">
                                 <li>
-                                    <a href="#">
+                                    <a href="#" style="text-decoration: none;">
                                         <i title="" class="icon icon-agree" data-original-title="赞同回复"
                                            data-toggle="tooltip" data-placement="right"></i>
                                         <b class="count">50</b>
@@ -351,7 +367,7 @@
                         </div>
                     </li>
                 </ul>
-            <div class="article-more-btn">
+            <div class="article-more-btn" id="article-more-btn">
                 <a class="btn btn-default btn-nav" id="article-more" style="width:100%">查看更多</a>
             </div>
             </div>
@@ -434,6 +450,14 @@
 </div>
 <div style="display:none">
     <script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script>
+</div>
+<div class="aw-footer-wrap">
+    <div class="aw-footer">
+        Copyright © 2015<span class="hidden-xs"> - 京ICP备11008151号, All Rights Reserved</span>
+
+        <span class="hide">Powered By <a href="http://www.wecenter.com/?copyright" target="blank">WeCenter 3.0 Beta 2</a></span>
+
+    </div>
 </div>
 <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
 <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>

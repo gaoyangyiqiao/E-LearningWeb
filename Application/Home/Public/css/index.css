@@ -170,10 +170,20 @@ body{
     margin-top: -2.2%;
 }
 
-/*.widght .title:after{*/
-/*content:"";*/
-/*width: 200px;*/
-/*position: absolute;*/
-/*left: 0;*/
-/*bottom: -1px;*/
-/*}*/
+a {
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+a:focus {
+    outline: 0 !important
+}
+
+.mod-body a{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
