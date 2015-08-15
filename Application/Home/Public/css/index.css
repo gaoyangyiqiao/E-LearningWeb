@@ -2,7 +2,9 @@
  * Created by gaoyang on 15/8/8.
  */
 
-
+body{
+    background: #ebebeb;
+}
 
 
 .main-content{
@@ -30,16 +32,17 @@
 
 .topic-readmore-btn{
     text-align: right;
-    padding-right: 5%;
+    padding-right: 10px;
+    padding-bottom: 3px;
 }
 
 
 .sidebar-department-list{
     list-style:none;
-    border: 1px solid lightgray;
+    border-radius: 2px;
+    border: 2px solid lightgray;
     background: #ffffff;
     text-align: center;
-    margin-top: 0px;
 }
 
 .department-list li{
@@ -163,10 +166,24 @@
     left: 0;
 }
 
-/*.widght .title:after{*/
-/*content:"";*/
-/*width: 200px;*/
-/*position: absolute;*/
-/*left: 0;*/
-/*bottom: -1px;*/
-/*}*/
+.article-more-btn{
+    margin-top: -2.2%;
+}
+
+a {
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+a:focus {
+    outline: 0 !important
+}
+
+.mod-body a{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

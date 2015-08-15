@@ -18,7 +18,7 @@ html,body{
     -web-kit-transition:all 0.2s ease-in-out;
 }
 
-.btn{
+.btn-nav{
     background: orange;
 }
 
